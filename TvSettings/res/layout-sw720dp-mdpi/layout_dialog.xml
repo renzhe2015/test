@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_control"
+    android:layout_width="36.0dp"
+    android:layout_height="62.0dp"
+    android:duplicateParentState="true"
+    android:gravity="center_horizontal"
+    android:background="@color/transparent_background"/>

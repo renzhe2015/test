@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_getallapp"
+    android:layout_width="wrap_content"
+    android:layout_height="62px"
+    android:orientation="horizontal"
+    android:paddingLeft="0px"
+    android:layout_gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right" 
+        android:orientation="horizontal">
+        
+        <TextView
+	        android:id="@+id/text_title"
+	        android:layout_width="160px"
+	        android:layout_height="wrap_content"
+	        android:textSize="33px"
+	        android:textColor="@color/layout_text_color"
+	        android:singleLine="true"
+	        android:layout_gravity="center"
+	        android:layout_alignParentLeft="true"
+	        android:ellipsize="marquee"
+	        android:paddingLeft="0px"/>
+        
+        <SeekBar 
+		    android:id="@+id/seek"
+		    android:layout_width="376px"
+		    android:layout_height="wrap_content"
+		    android:duplicateParentState="true"
+		    android:max="100"
+		    android:progress="50"
+		    android:progressDrawable="@drawable/tsb_mainmenu_seekbar_style"
+		    android:thumb="@drawable/seek_thumb"
+		    android:thumbOffset="15.75px" 
+		    android:layout_marginLeft="22px"/>
+	        
+        <ImageView
+            android:id="@+id/imageview"
+            android:contentDescription="@string/string_null"
+            android:layout_width="9px"
+            android:layout_height="15px"
+            android:background="@drawable/arrow_left_unfocus"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40px"/>
+
+        <com.tsb.settings.settings.view.AutoRunTextView
+            android:id="@+id/textvalue"
+        	android:layout_width="58px"
+	        android:layout_height="wrap_content"
+	        android:textSize="33px"
+	        android:textColor="@color/layout_text_color"
+	        android:singleLine="true"
+	        android:ellipsize="marquee"
+            android:gravity="center" 
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20px"/>
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:contentDescription="@string/string_null"
+            android:layout_width="9px"
+            android:layout_height="15px"
+            android:background="@drawable/arrow_right_unfocus"
+             android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20px"/>
+    </LinearLayout>
+</FrameLayout>

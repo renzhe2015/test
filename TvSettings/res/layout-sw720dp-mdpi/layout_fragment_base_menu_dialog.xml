@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="540.0px"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="@drawable/mylayerlist_all"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_title"
+        style="@style/Widget.Tv.TextView.Title"
+        android:text="@null" 
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/pane_padding_half"
+        android:layout_marginLeft="24.0px"
+        android:layout_marginRight="24.0px"
+        android:layout_marginTop="@dimen/pane_padding_half"
+        android:fadeScrollbars="false"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:listSelector="@drawable/item_generic_round_background"
+        tools:listitem="@layout/layout_item_setting" 
+        android:divider="@drawable/divider_h">
+
+        <requestFocus />
+    </ListView>
+
+<!--     <Button
+        android:id="@+id/button_close"
+        style="@style/Widget.Tv.ButtonBarButton"
+        android:layout_gravity="center"
+        android:text="@string/STRING_CLOSE" /> -->
+
+</LinearLayout>

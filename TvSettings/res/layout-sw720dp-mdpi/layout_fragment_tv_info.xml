@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   <LinearLayout
+	android:id="@+id/container_right_top"
+	android:layout_width="170.66667px" android:layout_height="175px"
+	android:gravity="center" android:orientation="vertical"
+	android:layout_alignParentRight="true"
+    	android:layout_alignParentTop="true"
+	android:background="@drawable/infobar_background">
+
+	<TextView android:layout_width="fill_parent" 
+	    android:id="@+id/atv_dialog_colzero" 
+	    android:gravity="center"
+		android:textColor="#FFEBEBEB" 
+		android:textSize="26.666668px" 
+		android:layout_height="wrap_content">
+	    
+	</TextView>
+	
+	<TextView android:layout_width="fill_parent" 
+	    android:id="@+id/atv_dialog_colOne" 
+	    android:gravity="center"
+		android:textColor="#FFEBEBEB" 
+		android:textSize="26.666668px" 
+		android:layout_height="wrap_content">
+	    
+	</TextView>
+	
+	<TextView android:layout_width="fill_parent" 
+	    android:id="@+id/atv_dialog_colTwo"  
+	    android:gravity="center"
+		android:textColor="#FF787878" 
+		android:textSize="18.666668px" 
+		android:layout_height="wrap_content">
+	    
+	</TextView>
+</LinearLayout>
+
+
+  <LinearLayout
+        
+		android:id="@+id/container_middle"
+        android:layout_width="486.6667px"
+        android:layout_height="146.66667px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23.333334px"
+        android:background="@drawable/dtv_infobar_background"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36.0px"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/dtv_infobar_channel_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:textColor="#FFEBEBEB"
+                android:textSize="21.333334px" 
+                android:layout_marginLeft="20.0px"/>
+
+            <com.tsb.settings.fragment.RollText
+                android:id="@+id/dtv_infobar_channel_name"
+                android:layout_width="166.66667px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10.0px"
+                android:gravity="left|center"
+                android:textColor="#FFEBEBEB"
+                android:textSize="18.0px" 
+                android:ellipsize="marquee"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/dtv_info_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:paddingRight="18.0px"
+                android:textColor="#FFEBEBEB"
+                android:textSize="16.666668px" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <com.tsb.settings.fragment.RollText
+                android:id="@+id/dtv_infobar_program_name"
+                android:layout_width="match_parent"
+                android:layout_height="60.0px"
+                android:paddingLeft="20.0px"
+                android:paddingRight="20.0px"
+                android:gravity="center"
+                android:textColor="#FFEBEBEB"
+                android:textSize="28.0px" 
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                />
+
+            <com.tsb.settings.fragment.CustomProgessBar
+                android:id="@+id/dtv_infobar_program_play_position_bar"
+                android:layout_width="340.0px"
+                android:layout_height="7.3333335px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="65.333336px" />
+
+            <TextView
+                android:id="@+id/dtv_infobar_program_start_time"
+                android:layout_width="50.666668px"
+                android:layout_height="20.0px"
+                android:layout_marginLeft="18.0px"
+                android:layout_marginTop="60.0px"
+                android:textColor="#FFD8D8D8"
+                android:textSize="12.666667px" />
+
+            <TextView
+                android:id="@+id/dtv_infobar_program_end_time"
+                android:layout_width="50.666668px"
+                android:layout_height="20.0px"
+                android:layout_marginLeft="416.6667px"
+                android:layout_marginTop="58.666668px"
+                android:gravity="right|center"
+                android:textColor="#FFD8D8D8"
+                android:textSize="12.666667px" />
+
+            <TextView
+                android:layout_width="93.333336px"
+                android:layout_height="26.666668px"
+                android:textColor="#FF8E8E8E"
+                android:textSize="16.0px" 
+                android:layout_marginTop="80.0px"
+                android:layout_marginLeft="18.0px"
+                android:text="@string/play_later"
+                />
+            
+            <com.tsb.settings.fragment.RollText
+                android:id="@+id/dtv_infobar_next_program_info"
+                android:layout_width="163.33334px"
+                android:layout_height="46.666668px"
+                android:layout_marginTop="73.333336px"
+                android:layout_marginLeft="111.333336px"
+                android:gravity="left|center"
+                android:textColor="#FFD8D8D8"
+                android:textSize="18.0px"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                />
+            
+            <TextView
+                android:id="@+id/dtv_infobar_soundtrack_info"
+                android:layout_width="wrap_content"
+                android:layout_height="20.0px"
+                android:layout_marginRight="20.0px"
+                android:layout_marginTop="84.66667px"
+                android:singleLine="true"
+                android:textColor="#FFD8D8D8"
+                android:textSize="12.0px" 
+                android:gravity="right"
+                android:layout_alignParentRight="true"
+                />
+           <TextView
+                android:id="@+id/dtv_infobar_sound_lang_info"
+                android:layout_width="wrap_content"
+                android:layout_height="20.0px"
+                android:layout_marginRight="8.0px"
+                android:layout_marginTop="84.66667px"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textColor="#FFD8D8D8"
+                android:textSize="12.0px" 
+                android:layout_toLeftOf="@id/dtv_infobar_soundtrack_info"
+                />
+            <com.tsb.settings.fragment.CustomProgessBar
+                android:id="@+id/dtv_infobar_intensity_bar"
+                android:layout_width="36.666668px"
+                android:layout_height="13.333334px"
+                android:layout_toLeftOf="@id/dtv_infobar_sound_lang_info"
+                android:layout_marginRight="8.0px"
+                android:layout_marginTop="86.66667px" />
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

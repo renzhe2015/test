@@ -1,0 +1,458 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="sound_effects">
+        <item>"标准"</item>
+        <item>"音乐厅"</item>
+        <item>"新闻"</item>
+        <item>"电影院"</item>
+        <item>"自定义"</item>
+        <item>"虚拟环绕声"</item>
+    </string-array>
+    <string-array name="sound_effects_toshiba">
+        <item>"标准"</item>
+        <item>"音乐厅"</item>
+        <item>"电影院"</item>
+        <item>"自定义"</item>
+        <item>"火箭炮"</item>
+    </string-array>
+    <string-array name="sound_scenes">
+        <item>"桌面模式"</item>
+        <item>"壁挂模式"</item>
+    </string-array>
+    <string-array name="sound_smartvolumn">
+        <item>"关"</item>
+        <item>"开"</item>
+    </string-array>
+    <string-array name="sound_spdif">
+        <item>"自动"</item>
+        <item>"PCM"</item>
+    </string-array>
+    <string-array name="sound_track">
+        <item>"左声道"</item>
+        <item>"右声道"</item>
+        <item>"立体声"</item>
+    </string-array>
+    <string-array name="pc_geometry">
+        <item>"自动"</item>
+        <item>"手动"</item>
+    </string-array>
+    <string-array name="pic_ratio">
+        <item>16：9</item>
+        <item>4：3</item>
+        <item>自动</item>
+        <item>智能全景</item>
+    </string-array>
+	<string-array name="sourcelist_aka">
+        <item>--</item>
+        <item>外接音箱</item>
+        <item>有线</item>
+        <item>DVD</item>
+        <item>游戏</item>
+        <item>PC</item>
+        <item>刻录机</item>
+        <item>卫星</item>
+        <item>VCR</item>
+    </string-array>
+	<string-array name="color_temperature">
+        <item>暖色</item>
+        <item>标准</item>
+        <item>冷色</item>
+    </string-array>
+	<string-array name="yes_no">
+        <item>否</item>
+        <item>是</item>
+    </string-array>
+	<string-array name="inputs">
+        <item>DTV</item>
+        <item>ATV</item>
+        <item>EXT 1</item>
+        <item>EXT 2</item>
+        <item>HDMI 1</item>
+        <item>HDMI 2</item>
+        <item>PC</item>
+    </string-array>
+	<string-array name="power_bass_booster">
+        <item>关</item>
+        <item>正常</item>
+        <item>超级</item>
+    </string-array>
+	<string-array name="sound_mode">
+		<item>动态</item>
+        <item>自然</item>
+        <item>高清音质</item>  
+    </string-array>
+	<string-array name="mts">
+        <item>自动</item>
+        <item>单声道</item>
+        <item>立体声</item>
+        <item>SAP</item>
+    </string-array>
+	<string-array name="atv_receiving_sound_mode">
+        <item>单声道</item>
+        <item>立体声</item>
+        <item>双声道</item>
+        <item>SAP</item>
+        <item>立体声 SAP</item>
+    </string-array>
+    <string-array name="dual">
+        <item>双声道 1</item>
+        <item>双声道 2</item>
+    </string-array>
+    <string-array name="audo_track">
+        <item>单声道</item>
+		<item>单声道 1</item>
+		<item>单声道 2</item>
+        <item>双声道 1</item>
+        <item>双声道 2</item>
+		<item>SAP</item>
+        <item>立体声</item>
+    </string-array>
+	<string-array name="pic_mode">
+        <item>Intelligent AutoView</item>
+        <item>动态</item>
+        <item>足球</item>
+        <item>板球</item>
+        <item>标准</item>
+        <item>柔和</item>
+        <item>电影</item>
+        <item>Eco模式</item>
+        <item>游戏</item>
+        <item>PC</item>
+    </string-array>
+   	<string-array name="noise_nr">
+    	<item>关</item>
+    	<item>低</item>
+        <item>中</item>
+        <item>高</item>       
+    </string-array>
+    <string-array name="contrast_booster">
+    	<item>关</item>
+    	<item>低</item>
+        <item>中</item>        
+        <item>高</item>       
+    </string-array>
+    <string-array name="tv_mount">
+        <item>底架</item>
+        <item>墙壁</item>
+    </string-array>
+	<string-array name="preference_teletext">
+        <item>自动</item>
+        <item>列表</item>
+    </string-array>
+    <string-array name="preference_1_4">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+	<string-array name="preference_pc_hdmi">
+        <item>PC</item>
+        <item>HDMI 1</item>
+    </string-array>
+    <string-array name="preference_hdmi_audio">
+        <item>自动</item>
+        <item>数字</item>
+        <item>模拟</item>
+    </string-array>
+	<string-array name="tcl_select_adtv">
+	<item>模拟信号</item>
+        <item>数字信号</item>
+    </string-array>    
+	<string-array name="tabsetting_option_OnOff">
+		<item>关</item>
+        <item>开</item>
+    </string-array>
+    <string-array name ="setup_country">
+        <item>巴林岛</item>
+        <item>印度</item>
+        <item>印度尼西亚</item>
+        <item>以色列</item>
+        <item>科威特</item>
+        <item>马来西亚</item>
+        <item>菲律宾</item>
+        <item>卡塔尔</item>
+        <item>沙特阿拉伯</item>
+        <item>新加坡</item>
+        <item>泰国</item>
+        <item>阿联酋</item>
+        <item>越南</item>
+    </string-array>
+    <string-array name="setup_option_location">
+		<item>家庭</item>
+        <item>商场</item>
+    </string-array>
+	<string-array name="tabsettingsound_adsettup_avl">
+        <item>开</item>
+        <item>关</item>
+    </string-array>
+    <string-array name="tabsettingsound_adsettup_spdif">
+        <item>SPDIF RAW</item>
+        <item>SPDIF LPCM</item>
+    </string-array>
+    
+	<string-array name="tabsettingpicture_personal_noise">
+        <item>关</item>
+        <item>低</item>
+        <item>中</item>
+        <item>高</item>
+        <item>自动</item>
+    </string-array>
+    <string-array name="tabsettingpicture_adsetup_dcc">
+        <item>开</item>
+        <item>关</item>
+    </string-array>
+    <string-array name="tabsettingpicture_adsetup_dcr">
+        <item>开</item>
+        <item>关</item>
+    </string-array>
+    <string-array name="tabsettingsetting_osd_exhibitiontime">
+        <item>None</item>
+        <item>10s</item>
+        <item>15s</item>
+        <item>30s</item>
+        <item>45s</item>
+        <item>60s</item>
+    </string-array>
+    
+    <string-array name="tabsettingchannel_chantenna_tvsource">
+        <item>AIR</item>
+        <item>有线</item>
+    </string-array>
+	<string-array name="setting_other_adj_hdmisource">
+        <item>自动</item>
+        <item>HDMI</item>
+        <item>DVI</item>
+    </string-array>
+    <string-array name="setting_other_adj_sleeptimer">
+        <item>关</item>
+        <item>15 Min</item>
+        <item>30 Min</item>
+        <item>60 Min</item>
+        <item>90 Min</item>
+        <item>120 Min</item>
+    </string-array>
+    <string-array name="manual_tuning_system">
+        <item>D/K</item>
+        <item>I</item>
+        <item>B/G</item>
+        <item>M</item>
+    </string-array>
+    <string-array name="manual_tuning_color_system">
+        <item>A</item>
+        <item>P</item>
+        <item>N4</item>
+        <item>N3</item>
+    </string-array>
+    <string-array name="manual_tuning_color_system_full">
+        <item>自动</item>
+        <item>PAL</item>
+        <item>NTSC</item>
+        <item>NTSC</item>
+    </string-array>
+    <string-array name="manual_tuning_color_system_full_ext">
+        <item>自动</item>
+        <item>PAL</item>
+        <item>NTSC</item>
+    </string-array>    
+    <string-array name="manual_tuning_sigclass">
+        <item>C</item>
+        <item>S</item>
+    </string-array>
+    <string-array name="manual_tuning_search">
+        <item>上</item>
+        <item>下</item>
+   </string-array>
+   <string-array name="service_option_normal_special">
+   		<item>正常</item>
+   		<item>Special</item>
+   </string-array>
+   <string-array name="service_option_white_tail">
+   		<item>正常</item>
+   		<item>1</item>
+   		<item>2</item>
+		<item>3</item>
+   		<item>4</item>
+   </string-array>
+   <string-array name="service_option_H_jitter">
+   		<item>正常</item>
+   		<item>_01</item>
+   		<item>_02</item>
+   		<item>_03</item>
+   		<item>_04</item>
+   		<item>_05</item>
+   </string-array>      
+   <string-array name="service_option_vsync_threshold">
+   		<item>正常</item>
+   		<item>1</item>
+   		<item>2</item>
+   </string-array>
+   <string-array name="service_option_enable_disable">
+   		<item>Disable</item>
+   		<item>Enable</item>
+   </string-array>
+   <string-array name="service_option_agc_speed">
+   		<item>196</item>
+   		<item>206</item>
+   		<item>216</item>
+   		<item>219</item>
+   		<item>222</item>
+   		<item>248</item>
+   		<item>250</item>
+   		<item>251</item>
+   		<item>Default</item>
+   		<item>89</item>
+   		<item>105</item>
+   		<item>121</item>
+   		<item>137</item>
+   		<item>158</item>
+   		<item>172</item>
+   		<item>185</item>
+   </string-array>
+    <string-array name="setting_pic_modes">
+        <item>标准</item>
+        <item>明亮</item>
+        <item>柔和</item>
+        <item>自定义</item>
+    </string-array>
+    <string-array name="system_upgrade">
+        <item>系统升级</item>
+        <item>恢复出厂设置</item>
+    </string-array> 
+    <string-array name="language_setting">
+        <item>简体中文</item>
+        <item>英文</item>
+    </string-array> 
+    <string-array name="common_setting">
+        <item>语言</item>
+        <item>输入法设置</item>
+        <item>睡眠关机</item>
+        <!-- <item>开机信号源</item> -->
+    </string-array>   
+    <string-array name="app_manage">
+        <item>全部应用</item>
+        <item>正在运行</item>
+        <item>已下载应用</item>
+        <item>已用空间</item>
+    </string-array>  
+    <string-array name="system_manage">
+        <item>系统更新</item>
+        <!-- <item>检查更新</item> -->
+        <item>恢复出厂设置</item>
+        <item>日期和时间</item>
+        <item>关于电视</item>
+    </string-array> 
+    <!-- <string-array name="language_setting">
+        <item>英语</item>
+        <item>中文</item>
+    </string-array> -->    
+    <string-array name="setting_pic_color_temp">
+        <!-- <item>User</item> -->
+        <item>标准</item>
+        <!-- <item>Warmer</item> -->
+        <item>暖色温</item>
+        <item>冷色温</item>
+        <!-- <item>Cooler</item> -->
+    </string-array>
+    <string-array name="child_saveeye">
+        <item>关闭</item>
+        <item>开启</item>
+    </string-array>
+    
+    <string-array name="child_outsee">
+        <item>关闭</item>
+        <item>30分钟</item>
+        <item>60分钟</item>
+        <item>90分钟</item>
+        <item>120分钟</item>
+    </string-array>
+    
+    <string-array name="child_channel">
+        <item>关闭</item>
+        <item>开启</item>
+    </string-array>
+    
+    <string-array name="child_lock">
+        <item>关闭</item>
+        <item>开启</item>
+    </string-array>
+     <string-array name="system_sleep_times">
+        <item>"关"</item>
+        <item>"10分钟"</item>
+        <item>"20分钟"</item>
+        <item>"30分钟"</item>
+        <item>"60分钟"</item>
+        <item>"90分钟"</item>
+        <item>"120分钟"</item>
+        <item>"180分钟"</item>
+        <item>"240分钟"</item>
+    </string-array>    
+    <!-- add by huangfh@tcl.com -->
+    <string-array name="network_mode">
+        <item>"有线网络"</item>
+        <item>"无线网络"</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item msgid="1922181315419294640"></item>
+        <item msgid="8934131797783724664">"正在扫描..."</item>
+        <item msgid="8513729475867537913">"正在连接..."</item>
+        <item msgid="515055375277271756">"正在进行身份验证..."</item>
+        <item msgid="1943354004029184381">"正在获取 IP 地址..."</item>
+        <item msgid="4221763391123233270">"已连接"</item>
+        <item msgid="624838831631122137">"已暂停"</item>
+        <item msgid="7979680559596111948">"正在断开连接..."</item>
+        <item msgid="1634960474403853625">"已断开连接"</item>
+        <item msgid="746097431216080650">"失败"</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item msgid="7714855332363650812"></item>
+        <item msgid="8878186979715711006">"正在扫描..."</item>
+        <item msgid="355508996603873860">"正在连接到 <xliff:g id="NETWORK_NAME">%1$s</xliff:g>..."</item>
+        <item msgid="554971459996405634">"正在通过 <xliff:g id="NETWORK_NAME">%1$s</xliff:g> 进行身份验证..."</item>
+        <item msgid="7928343808033020343">"正在从 <xliff:g id="NETWORK_NAME">%1$s</xliff:g> 获取 IP 地址..."</item>
+        <item msgid="8937994881315223448">"已连接到 <xliff:g id="NETWORK_NAME">%1$s</xliff:g>"</item>
+        <item msgid="1330262655415760617">"已暂停"</item>
+        <item msgid="7698638434317271902">"正在断开与 <xliff:g id="NETWORK_NAME">%1$s</xliff:g> 的连接..."</item>
+        <item msgid="197508606402264311">"已断开连接"</item>
+        <item msgid="8578370891960825148">"失败"</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item msgid="1435933968767043814">"开放"</item>
+        <item msgid="6318432659048829665">"WEP"</item>
+        <item msgid="2966395706508338179">"WPA/WPA2 PSK"</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item msgid="2245412278046491293">"弱"</item>
+        <item msgid="5615082285463430971">"一般"</item>
+        <item msgid="3565079809875324621">"较强"</item>
+        <item msgid="5702329417707689835">"强"</item>
+    </string-array>
+     <string-array name="wifi_wep_keys">
+        <item >"密钥1"</item>
+        <item >"密钥2"</item>
+        <item >"密钥3"</item>
+        <item >"密钥4"</item>
+    </string-array>  
+    <!-- end add by huangfh@tcl.com -->
+    <string-array name="programme_timer_repeat">
+        <item>Once</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+   </string-array>
+    <string-array name="dtv_scan_type">
+        <item>自动搜索</item>
+        <item>手动搜索</item>
+    </string-array>
+    <string-array name="atv_scan_type">
+        <item>自动搜索</item>
+        <item>手动搜索</item>
+        <item>微&#160;&#160;调</item>
+    </string-array>
+    
+    
+    <string-array name="band_width">
+        <item>8 MHz</item>
+        <item>7 MHz</item>
+        <item>7 MHz和8MHz</item>
+    </string-array>
+   
+</resources> 

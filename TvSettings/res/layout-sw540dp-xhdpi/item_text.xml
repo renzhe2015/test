@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_generic_round_background"
+    android:gravity="center_vertical"
+    android:paddingBottom="7.5px"
+    android:paddingLeft="7.5px"
+    android:paddingRight="7.5px"
+    android:paddingTop="7.5px"
+    android:text="@null"
+    android:textColor="@drawable/item_generic_textcolor"
+    android:textSize="9sp" />
+

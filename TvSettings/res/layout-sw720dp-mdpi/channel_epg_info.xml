@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500.0px"
+    android:layout_height="wrap_content"
+    android:background="@drawable/channel_epg_bottom"
+    android:id="@+id/program_info_layout"
+    android:orientation="horizontal">
+   <LinearLayout
+            android:layout_width="153.33334px"
+            android:layout_height="80.0px"
+            android:gravity="center"
+            android:id="@+id/program_info_layout0"
+            android:orientation="vertical">
+            <com.tsb.settings.fragment.RollText
+                android:layout_width="153.33334px"
+                android:layout_height="56.666668px"
+                android:textColor="#ffebebeb"
+                android:textSize="18px" 
+                android:gravity="center"
+                android:id="@+id/program_name"  
+          
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="23.333334px"
+                android:textColor="#ffc8c8c8"
+                android:textSize="18px" 
+                android:gravity="center"
+                android:id="@+id/program_time"
+                android:singleLine="true"/>
+        </LinearLayout>
+       
+   <LinearLayout
+            android:layout_width="153.33334px"
+            android:layout_height="80.0px"
+            android:orientation="vertical"
+            android:gravity="center" 
+            android:id="@+id/program_info_layout1">
+
+            <com.tsb.settings.fragment.RollText
+                android:layout_width="153.33334px"
+                android:layout_height="56.666668px"
+                android:textColor="#ffebebeb"
+                android:textSize="18px" 
+                android:gravity="center"
+                android:id="@+id/program_name1"
+   
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="23.333334px"
+                android:textColor="#ffc8c8c8"
+                android:textSize="18px" 
+                android:gravity="center"
+                android:id="@+id/program_time1"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+       
+        <LinearLayout
+            android:layout_width="153.33334px"
+            android:layout_height="80.0px"
+            android:orientation="vertical"
+            android:gravity="center" 
+            android:id="@+id/program_info_layout2">
+            <com.tsb.settings.fragment.RollText
+                android:layout_width="153.33334px"
+                android:layout_height="56.666668px"
+                android:textColor="#ffebebeb"
+                android:textSize="18px" 
+                android:gravity="center"
+                android:id="@+id/program_name2"  
+    
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="23.333334px"
+                android:textColor="#ffc8c8c8"
+                android:textSize="18px" 
+                android:gravity="center"
+                android:id="@+id/program_time2"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+    </LinearLayout>

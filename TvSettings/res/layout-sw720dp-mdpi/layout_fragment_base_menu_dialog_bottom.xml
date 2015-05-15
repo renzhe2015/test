@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/pane_width_main_menu"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center_horizontal|bottom"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_title"
+        style="@style/Widget.Tv.TextView.Title"
+        android:text="@null" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120.0px"
+        android:layout_marginLeft="@dimen/pane_padding"
+        android:layout_marginRight="@dimen/pane_padding"
+        android:layout_marginTop="@dimen/pane_padding_half"
+        android:fadeScrollbars="false"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:listSelector="@drawable/item_generic_round_background"
+        tools:listitem="@layout/layout_item_setting" >
+
+        <requestFocus />
+    </ListView>
+
+</LinearLayout>

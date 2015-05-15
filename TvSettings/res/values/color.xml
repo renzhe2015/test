@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<color name="BLUE">#FF0000FF</color>
+	<color name="WHITE">#FFFFFFFF</color>
+	<color name="BLACK">#FF000000</color>
+	<color name="TRANSPARENT">#00000000</color>
+	<color name="BLACK_A200">#C8000000</color>
+	<color name="CYAN_PALE">#FF0066CC</color>
+	<color name="CYAN">#FF00FFFF</color>
+	<color name="GRAY">#FF969696</color>
+	<color name="ORAGNE">#FFF6921E</color>
+	<color name="pinselect">#F92121FF</color>
+	<color name="pinunselect">#F9212121</color>
+	<color name="textselect">#FFF5F4F9</color>
+	<color name="RED">#FFFF0000</color>
+	<color name="GREEN">#FF00FF00</color>
+	
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="100px"
+    android:layout_gravity="bottom|center"
+    android:layout_marginBottom="25px"
+    android:background="@drawable/submenu_background"
+    android:orientation="horizontal" >
+    
+    <LinearLayout
+        android:id="@+id/submenu_auto_button"
+        android:layout_width="300px"
+        android:layout_height="fill_parent"
+        android:background="@drawable/submenu_button_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/submenu_auto_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="@string/ratio_auto"
+            android:textColor="#FFD8D8D8"
+            android:textSize="40px" 
+            android:layout_marginLeft="110px"
+            />
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="4px"
+        android:layout_height="match_parent"
+        android:background="@drawable/submenu_cutline" />
+    
+    <LinearLayout
+        android:id="@+id/submenu_169_button"
+        android:layout_width="300px"
+        android:layout_height="fill_parent"
+        android:background="@drawable/submenu_button_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/submenu_169_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="@string/ratio_169"
+            android:textColor="#FFD8D8D8"
+            android:textSize="40px" 
+            android:layout_marginLeft="110px"
+            />
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="4px"
+        android:layout_height="match_parent"
+        android:background="@drawable/submenu_cutline" />
+    
+    <LinearLayout
+        android:id="@+id/submenu_43_button"
+        android:layout_width="300px"
+        android:layout_height="fill_parent"
+        android:background="@drawable/submenu_button_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/submenu_43_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="@string/ratio_43"
+            android:textColor="#FFD8D8D8"
+            android:textSize="40px" 
+            android:layout_marginLeft="110px"
+            />
+    </LinearLayout>
+
+</LinearLayout>

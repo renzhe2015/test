@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/tcl_network_width"
+    android:layout_height="@dimen/tcl_network_height"
+    android:layout_marginLeft="40.0px"
+    android:fadeScrollbars="true"
+    android:focusable="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0.0px"
+            android:orientation="horizontal" >
+
+            <com.tsb.settings.settings.view.LayoutItem
+                android:id="@+id/spinner_network_choice"
+                android:layout_width="match_parent"
+                android:layout_height="40.0px"
+                android:layout_marginLeft="0.0px" >
+            </com.tsb.settings.settings.view.LayoutItem>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/network_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.0px" >
+
+            <LinearLayout
+                android:id="@+id/layout_ethernet"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0px"
+                    android:layout_marginTop="20.0px"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="95.0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="28.0px"
+                        android:ellipsize="marquee"
+                        android:text="@string/tcl_ip_information"
+                        android:textColor="@color/text_ip_title_color"
+                        android:textSize="@dimen/tcl_wifi_text_size" />
+
+                    <ImageView
+                        android:id="@+id/divider_below"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:gravity="center_horizontal"
+                        android:src="@drawable/divider_h" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_ethernet_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="175.0px"
+                    android:layout_marginLeft="10.0px"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0px"
+                        android:layout_marginTop="5.0px"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="@dimen/tcl_wifi_text_info_width"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.0px"
+                            android:ellipsize="marquee"
+                            android:text="@string/tcl_mac_address"
+                            android:textColor="@color/text_unfocus"
+                            android:textSize="@dimen/tcl_wifi_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_ethernet_mac"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:ellipsize="marquee"
+                            android:gravity="right"
+                            android:text="@string/tcl_ip_address"
+                            android:textColor="@color/text_unfocus"
+                            android:textSize="@dimen/tcl_wifi_text_size" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0px"
+                        android:layout_marginTop="5.0px"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="@dimen/tcl_wifi_text_info_width"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.0px"
+                            android:ellipsize="marquee"
+                            android:text="@string/tcl_ip_address"
+                            android:textColor="@color/text_unfocus"
+                            android:textSize="@dimen/tcl_wifi_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_ethernet_ip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:ellipsize="marquee"
+                            android:gravity="right"
+                            android:text="@string/tcl_ip_address"
+                            android:textColor="@color/text_unfocus"
+                            android:textSize="@dimen/tcl_wifi_text_size" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0px"
+                        android:layout_marginTop="5.0px"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="@dimen/tcl_wifi_text_info_width"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.0px"
+                            android:ellipsize="marquee"
+                            android:text="@string/tcl_subnet_mask"
+                            android:textColor="@color/text_unfocus"
+                            android:textSize="@dimen/tcl_wifi_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_ethernet_subnet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:ellipsize="marquee"
+                            android:gravity="right"
+                            android:text="@string/tcl_ip_address"
+                            android:textColor="@color/text_unfocus"
+                            android:textSize="@dimen/tcl_wifi_text_size" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0px"
+                        android:layout_marginTop="5.0px"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="@dimen/tcl_wifi_text_info_width"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.0px"
+                            android:ellipsize="marquee"
+                            android:text="@string/tcl_gateway"
+                            android:textColor="@color/text_unfocus"
+                            android:textSize="@dimen/tcl_wifi_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_ethernet_gateway"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:ellipsize="marquee"
+                            android:gravity="right"
+                            android:text="@string/tcl_ip_address"
+                            android:textColor="@color/text_unfocus"
+                            android:textSize="@dimen/tcl_wifi_text_size" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0px"
+                        android:layout_marginTop="5.0px"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="@dimen/tcl_wifi_text_info_width"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.0px"
+                            android:ellipsize="marquee"
+                            android:text="@string/tcl_dns_address"
+                            android:textColor="@color/text_unfocus"
+                            android:textSize="@dimen/tcl_wifi_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_ethernet_dns"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:ellipsize="marquee"
+                            android:gravity="right"
+                            android:text="@string/tcl_ip_address"
+                            android:textColor="@color/text_unfocus"
+                            android:textSize="@dimen/tcl_wifi_text_size" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <com.tsb.settings.settings.view.LayoutItem
+                    android:id="@+id/layout_ethernet_auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0.0px"
+                    android:layout_marginRight="0.0px"
+                    android:layout_marginTop="10.0px"
+                    android:nextFocusUp="@+id/spinner_network_choice" >
+                </com.tsb.settings.settings.view.LayoutItem>
+
+                <com.tsb.settings.settings.view.LayoutItem
+                    android:id="@+id/layout_ethernet_manual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0.0px"
+                    android:layout_marginRight="0.0px"
+                    android:layout_marginTop="0.0px" >
+                </com.tsb.settings.settings.view.LayoutItem>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_network_wifi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <!--
+            <FrameLayout 
+            android:layout_width="match_parent"
+            android:layout_height="32.0px"
+            android:orientation="horizontal"
+            >
+            <TextView android:layout_width="100.0px"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8.0px"
+	            android:layout_gravity="center_vertical"
+	            android:ellipsize="marquee"
+		        android:textColor="@color/text_unfocus"
+	            android:textSize="12.0sp"
+	            android:text="@string/tcl_network_wifi"/>
+        
+        	<com.tsb.settings.settings.view.TCLSwitchBar
+                android:id="@+id/switch_wifi"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_height="20.0px"
+                android:layout_marginRight="6.666667px"
+                style="@style/TCL_Switchbar_style"/> 
+			</FrameLayout>  
+			<ImageView android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="center_horizontal"
+			        android:src="@drawable/divider_h" />
+                -->
+
+                <Switch
+                    android:id="@+id/switch_wifi"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0px"
+                    android:background="@drawable/sub_menu_selector"
+                    android:switchTextAppearance="@style/TCL_Switchbar_style"
+                    android:paddingLeft="3.3333335px"
+                    android:thumb="@drawable/switch_thumb"
+                    android:track="@drawable/switch_off" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/divider_h" />
+
+                <TextView
+                    android:id="@+id/tv_wifi_list_title"
+                    android:layout_width="200.0px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0.0px"
+                    android:layout_marginTop="15.0px"
+                    android:ellipsize="marquee"
+                    android:text="@string/tcl_wifi_network_list"
+                    android:textColor="@color/text_ip_title_color"
+                    android:textSize="@dimen/tcl_wifi_text_size" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/divider_h" />
+
+                <ListView
+                    android:id="@+id/layout_wifi_networks_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/tcl_wifi_less_height"
+                    android:layout_marginLeft="0.0px"
+                    android:layout_marginRight="0.0px"
+                    android:divider="@drawable/divider_h"
+                    android:fadingEdge="none"
+                    android:listSelector="@drawable/wifi_list_selector"
+                    android:scrollbars="none"
+                    android:scrollingCache="false" />
+
+                <Button
+                    android:id="@+id/layout_wifi_more_icon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="46.0px"
+                    android:background="@drawable/wifi_list_selector"
+                    android:drawablePadding="4.0px"
+                    android:nextFocusUp="@+id/layout_wifi_networks_list"
+                    android:text="@string/tcl_wifi_network_list_more"
+                    android:textColor="@color/pop_item_text_color"
+                    android:textSize="@dimen/tcl_wifi_text_size"
+                    android:visibility="gone" />
+
+                <com.tsb.settings.settings.view.LayoutItem
+                    android:id="@+id/layout_wifi_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0.0px"
+                    android:layout_marginRight="0.0px"
+                    android:layout_marginTop="0.0px" >
+                </com.tsb.settings.settings.view.LayoutItem>
+            </LinearLayout>
+        </FrameLayout>
+
+        <com.tsb.settings.settings.view.LayoutItem
+            android:id="@+id/layout_network_speed_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0.0px"
+            android:layout_marginRight="0.0px"
+            android:layout_marginTop="0.0px"
+            android:nextFocusDown="@+id/spinner_network_choice"
+            android:visibility="invisible" >
+        </com.tsb.settings.settings.view.LayoutItem>
+    </LinearLayout>
+
+</ScrollView>

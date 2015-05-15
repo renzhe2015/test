@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_getallapp"
+    android:layout_width="450px"
+    android:layout_height="62px"
+    android:orientation="horizontal"
+    android:paddingLeft="0px"
+    android:paddingRight="10px"
+    android:focusable="false"
+    android:layout_gravity="center_vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical" 
+        android:addStatesFromChildren="true"        
+    	android:focusable="false"
+        android:orientation="horizontal">
+
+        <TextView
+	        android:id="@+id/textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="33px"
+	        android:textColor="@color/layout_text_color"
+	        android:singleLine="true"
+	        android:layout_gravity="center"
+	        android:layout_alignParentLeft="true"
+	        android:ellipsize="marquee"
+	        android:paddingLeft="5px"
+	        android:layout_marginTop="5px"   
+    		android:focusable="false"/>
+        
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:contentDescription="@string/string_null"
+            android:layout_marginTop="15px"
+            android:layout_width="9px"
+            android:layout_height="17px"
+            android:background="@drawable/arrow_right_unfocus"
+            android:gravity="center"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginLeft="23px"   
+    		android:focusable="false"/>
+        
+        <com.tsb.settings.settings.view.AutoRunTextView
+            android:id="@+id/textvalue"
+        	android:layout_width="180px"
+	        android:layout_height="wrap_content"
+	        android:textSize="33px"
+	        android:textColor="@color/layout_text_color"
+	        android:singleLine="true"
+	        android:layout_gravity="center"
+	        android:ellipsize="marquee"
+            android:gravity="right" 
+            android:layout_toLeftOf="@id/imageview"
+	        android:layout_marginTop="5px"   
+    		android:focusable="false"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/divider_below"
+        android:contentDescription="@string/string_null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center_horizontal"/>
+</FrameLayout>

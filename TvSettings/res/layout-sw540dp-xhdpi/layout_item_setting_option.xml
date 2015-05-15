@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_getallapp"
+    android:layout_width="match_parent"
+    android:layout_height="75px"
+    android:orientation="horizontal"
+    android:paddingLeft="0px"
+    android:paddingRight="15px"
+    android:layout_gravity="center_vertical">
+
+<!--    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/text_unfocus"
+        android:singleLine="true"
+        android:layout_gravity="center_vertical"
+        android:ellipsize="marquee"
+        android:paddingLeft="12px"/>
+        -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right" 
+        android:orientation="horizontal">
+
+        <com.tsb.settings.settings.view.AutoRunTextView
+            android:id="@+id/textvalue"
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="18sp"
+	        android:textColor="@color/text_unfocus"
+	        android:singleLine="true"
+	        android:layout_gravity="center_vertical"
+	        android:ellipsize="marquee"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:contentDescription="@string/string_null"
+            android:layout_marginLeft="15px"
+            android:layout_width="9px"
+            android:layout_height="15px"
+            android:background="@drawable/arrow_right_unfocus"
+            android:gravity="center"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/divider_below"
+        android:contentDescription="@string/string_null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center_horizontal"
+        android:src="@drawable/divider_dialog" />
+</FrameLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Pane.Dialog"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_title"
+        style="@style/Widget.Tv.TextView.Title"
+        android:text="@string/ATV" />
+
+    <TextView
+        android:id="@+id/text_message"
+        style="@style/Widget.Tv.TextView.Message"
+        android:layout_width="match_parent"
+        android:layout_height="0.0px"
+        android:layout_weight="1"
+        android:text="@string/msg_select_atv_table_scan" />
+
+    <LinearLayout
+        style="@style/Pane.ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button_table_scan"
+            style="@style/Widget.Tv.ButtonBarButton"
+            android:layout_width="60.0sp"
+            android:text="@string/table_scan" >
+        </Button>
+
+        <Button
+            android:id="@+id/button_seek_scan"
+            style="@style/Widget.Tv.ButtonBarButton"
+            android:layout_width="60.0sp"
+            android:text="@string/seek_scan" >
+
+            <requestFocus />
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

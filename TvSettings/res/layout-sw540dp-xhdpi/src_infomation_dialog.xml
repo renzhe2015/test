@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:gravity="center" android:orientation="vertical"
+	android:background="@drawable/infobar_background">
+	<TextView android:layout_width="fill_parent" 
+	    android:id="@+id/atv_dialog_colOne" 
+	    android:gravity="center"
+		android:textColor="#FFEBEBEB" 
+		android:textSize="40px" 
+		android:layout_height="wrap_content">
+	    
+	</TextView>
+	<TextView android:layout_width="fill_parent" 
+	    android:id="@+id/atv_dialog_colTwo"  
+	    android:gravity="center"
+		android:textColor="#FF787878" 
+		android:textSize="28px" 
+		android:layout_height="wrap_content">
+	    
+	</TextView>
+</LinearLayout>

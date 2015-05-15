@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:edt="http://schemas.android.com/apk/res/com.tsb.tv.settings"
+    android:layout_width="@dimen/tcl_network_manual_width"
+    android:layout_height="@dimen/tcl_network_height"
+    android:layout_marginLeft="@dimen/tcl_network_left_margin"
+    android:layout_marginTop="@dimen/tcl_network_top_margin" >
+
+    <FrameLayout
+        android:id="@+id/layout_third_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            style="@style/SecondTextStyle.Title"
+            android:layout_gravity="left"
+            android:layout_marginLeft="18px"
+            android:text="@string/tcl_manual_setting" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18px"
+            android:layout_marginTop="96px"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="72px"
+                android:layout_marginLeft="0px"
+                android:layout_marginTop="0px"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/SecondTextStyle"
+                    android:layout_width="@dimen/tcl_wifi_text_info_width"
+                    android:ellipsize="marquee"
+                    android:gravity="center_vertical"
+                    android:text="@string/tcl_mac_address" />
+
+                <TextView
+                    android:id="@+id/tv_eth_manual_mac"
+                    android:layout_width="270px"
+                    android:layout_height="60px"
+                    android:layout_marginLeft="15px"
+                    android:ellipsize="marquee"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/tcl_mac_address"
+                    android:textColor="#d8d8d8"
+                    android:textSize="13.5sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="72px"
+                android:layout_marginLeft="0px"
+                android:layout_marginTop="0px"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/SecondTextStyle"
+                    android:layout_width="@dimen/tcl_wifi_text_info_width"
+                    android:ellipsize="marquee"
+                    android:gravity="center_vertical"
+                    android:text="@string/tcl_ip_address" />
+
+                <com.tsb.settings.settings.view.IPEdittext
+                    android:id="@+id/eth_manuel_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15px"
+                    android:nextFocusUp="@+id/btn_save_ip_config"
+                    android:nextFocusDown="@+id/eth_manuel_mask" >
+                </com.tsb.settings.settings.view.IPEdittext>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="72px"
+                android:layout_marginLeft="0px"
+                android:layout_marginTop="0px"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/SecondTextStyle"
+                    android:layout_width="@dimen/tcl_wifi_text_info_width"
+                    android:ellipsize="marquee"
+                    android:gravity="center_vertical"
+                    android:text="@string/tcl_subnet_mask" />
+
+                <com.tsb.settings.settings.view.IPEdittext
+                    android:id="@+id/eth_manuel_mask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15px"
+                    android:nextFocusDown="@+id/tcl_gateway" >
+                </com.tsb.settings.settings.view.IPEdittext>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="72px"
+                android:layout_marginLeft="0px"
+                android:layout_marginTop="0px"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/SecondTextStyle"
+                    android:layout_width="@dimen/tcl_wifi_text_info_width"
+                    android:ellipsize="marquee"
+                    android:gravity="center_vertical"
+                    android:text="@string/tcl_gateway" />
+
+                <com.tsb.settings.settings.view.IPEdittext
+                    android:id="@+id/eth_manuel_gateway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15px"
+                    android:nextFocusDown="@+id/eth_manuel_dns" >
+                </com.tsb.settings.settings.view.IPEdittext>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="72px"
+                android:layout_marginLeft="0px"
+                android:layout_marginTop="0px"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/SecondTextStyle"
+                    android:layout_width="@dimen/tcl_wifi_text_info_width"
+                    android:ellipsize="marquee"
+                    android:gravity="center_vertical"
+                    android:text="@string/tcl_dns_address" />
+
+                <com.tsb.settings.settings.view.IPEdittext
+                    android:id="@+id/eth_manuel_dns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15px"
+                    android:nextFocusDown="@+id/btn_save_ip_config" >
+                </com.tsb.settings.settings.view.IPEdittext>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_save_ip_config"
+                style="@style/SecondStyle_Button"
+                android:layout_width="360px"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="37.5px"
+                android:gravity="center"
+                android:nextFocusDown="@+id/eth_manuel_ip"
+                android:text="@string/tcl_save" />
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

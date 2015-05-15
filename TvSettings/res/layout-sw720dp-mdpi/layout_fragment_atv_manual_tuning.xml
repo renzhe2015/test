@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Pane.TVManualSearch"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_tv_background"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/Widget.Tv.TextView.Title"
+        android:gravity="center_vertical|center_horizontal"
+        android:shadowColor="#FB3C3F3B"
+        android:singleLine="false"
+        android:text="@string/STRING_MANUAL_TUNING" 
+        android:focusable="false"/>
+
+    <LinearLayout
+        android:id="@+id/container_atv_tuning"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20.0px"
+        android:baselineAligned="true"
+        android:focusable="false"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/pane_padding_half"
+        android:paddingRight="@dimen/pane_padding"
+        android:paddingTop="@dimen/pane_padding_half" >
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="266.6667px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pane_padding_half"
+            android:layout_marginRight="@dimen/pane_padding_half"
+            android:layout_weight="1"
+            android:max="100" 
+            android:visibility="gone"/>
+        
+        <LinearLayout
+            android:id="@+id/found_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal"
+	        android:layout_marginTop="33.333336px"
+	        android:paddingBottom="@dimen/pane_padding"
+	        android:paddingLeft="@dimen/pane_padding"
+	        android:paddingRight="@dimen/pane_padding"
+	        android:paddingTop="@dimen/pane_padding" 
+	        android:visibility="gone">
+	
+		        <TextView
+		            android:id="@+id/tv_auto_search_label"
+		            style="@style/Widget.Tv.TextView"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="center"
+		            android:text="@string/tcl_atv_auto_search_number" 
+		            android:layout_weight="0.1"
+		            android:layout_gravity="center_horizontal"/>
+		
+		        <TextView
+		            android:id="@+id/text_found"
+		            style="@style/Widget.Tv.TextView"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@null" 
+		            android:layout_weight="0.1"/>
+    	</LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/freq_begin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            
+            <TextView
+                style="@style/Widget.Tv.TextView.AtvTuing.Item.Title"
+                android:text="@string/tcl_atv_manual_begin_freq" 
+                android:focusable="false"/>
+
+           	<EditText
+           	    android:id="@+id/freq_begin_value"
+                android:nextFocusUp="@+id/btn_manual_search"
+                android:nextFocusDown="@+id/freq_end_value"
+           	    style="@style/Widget.Tv.EditText.AtvTuing.Item"
+                android:focusable="true"
+                android:paddingLeft="26.666668px"
+                android:gravity="center_vertical|left"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:hint="@string/tcl_atv_manual_hint_freq"
+                android:singleLine="true"/>
+           	
+            <TextView
+                android:id="@+id/freq_unit1"
+                android:layout_height="wrap_content"
+                android:layout_width="50.0px"                  
+                android:layout_marginLeft = "-83.333336px"
+                android:gravity="center_vertical|right"
+                android:focusable="false"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18px"
+                android:text="@string/tcl_atv_manual_freq_unit"/>
+        </LinearLayout>
+
+
+         <LinearLayout
+            android:id="@+id/freq_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            
+             <TextView
+                style="@style/Widget.Tv.TextView.AtvTuing.Item.Title"
+                android:text="@string/tcl_atv_manual_end_freq" 
+                android:focusable="false"/>
+
+            <EditText
+           	    android:id="@+id/freq_end_value"
+                style="@style/Widget.Tv.EditText.AtvTuing.Item"
+                android:focusable="true"
+                android:paddingLeft="26.666668px"
+                android:gravity="center_vertical|left"
+                android:nextFocusDown="@+id/btn_manual_search"
+                android:nextFocusUp="@id/freq_begin_value"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:hint="@string/tcl_atv_manual_hint_freq"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/freq_unit2"
+                android:layout_height="wrap_content"
+                android:layout_width="50.0px"                   
+                android:layout_marginLeft = "-83.333336px"
+                android:gravity="center_vertical|right"
+                android:focusable="false"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18px"
+                android:text="@string/tcl_atv_manual_freq_unit"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/option_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal|bottom"
+            android:orientation="horizontal" 
+            android:layout_marginTop="20.0px">
+
+
+            <Button
+		        android:id="@+id/btn_manual_search"
+		        style="@style/Widget.Tv.ButtonBarButton.Tunning"
+		        android:layout_gravity="center_horizontal"
+		        android:layout_marginTop="13.333334px"
+                android:nextFocusDown="@+id/freq_begin_value"
+                android:nextFocusUp="@+id/freq_end_value"
+		        android:text="@string/STRING_STARTSCAN"
+		        android:textSize="16px"
+		        android:visibility="visible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

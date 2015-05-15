@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Pane.Dialog"
+    android:layout_width="315px"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left|top"
+    android:layout_margin="@dimen/pane_padding"
+    android:orientation="vertical" >
+    
+    <Button 
+        android:id="@+id/btn_source_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Pane.ButtonBar"
+        android:text="@string/tcl_source_search"/>"
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/pane_padding"
+        android:layout_marginLeft="@dimen/pane_padding"
+        android:layout_marginRight="@dimen/pane_padding"
+        android:divider="@drawable/list_divider"
+        android:listSelector="@android:color/transparent"
+        android:nextFocusUp="@id/btn_source_search"/>
+
+</LinearLayout>

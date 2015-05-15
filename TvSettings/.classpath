@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="lib" path="lib_rt2984/classes.jar" sourcepath="E:/hfh/软件/adt-bundle-windows-x86-20140321/sdk/sources/android-19"/>
+	<classpathentry kind="lib" path="lib_rt2984/core-libart.jar"/>
+	<classpathentry kind="lib" path="lib_rt2984/framework-base.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/rt2984_all"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

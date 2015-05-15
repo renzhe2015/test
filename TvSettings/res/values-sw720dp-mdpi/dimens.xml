@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fragment_main_menu_button_size">53.0px</dimen>
+    
+    <dimen name="pane_padding">6.0px</dimen>
+    <dimen name="pane_padding_half">6.0px</dimen>
+    <dimen name="pane_padding_quarter">3.0px</dimen>
+    
+    <dimen name="pane_width_dialog">405.0px</dimen>
+    <dimen name="pane_height_dialog">153.33334px</dimen>
+    <dimen name="pane_height_dialog_auto_search">300.0px</dimen>
+    <dimen name="pane_height_dialog_title">40.0px</dimen>
+    <dimen name="pane_width_main_menu">540.0px</dimen>
+    
+    <dimen name="epg_time_interval_with">90.0px</dimen>
+    <dimen name="epg_item_height">31.333334px</dimen>
+    
+    <dimen name="line_width">1.0px</dimen>
+    <dimen name="pane_width_program_info">560.0px</dimen>
+    
+    <dimen name="seekbar_background_inset">3.0px</dimen>
+    <dimen name="seekbar_background_radius">4.0px</dimen>
+    
+    <dimen name="fragment_main_layout_width">1280.0px</dimen>
+    <dimen name="fragment_main_layout_height">720.0px</dimen>
+    
+    <dimen name="fragment_main_tab_width">186.66667px</dimen>
+    <dimen name="fragment_main_tab_height">60.666668px</dimen>
+    <dimen name="fragment_main_tab_paddingLandR">13.333334px</dimen>
+    <dimen name="fragment_main_tab_paddingTandB">13.333334px</dimen>
+    <dimen name="fragment_main_tab_horizontal_space">7.3333335px</dimen>
+    <dimen name="fragment_main_tab_vertical_left_space">48.666668px</dimen>
+    <dimen name="fragment_main_tab_text_size">26.666668px</dimen>
+    <dimen name="fragment_main_tab_layout_top_space">63.333336px</dimen>
+    <dimen name="fragment_main_tab_layout_width">240.0px</dimen>
+    <!-- add by huangfh@tcl.com -->
+    <dimen name="tcl_wifi_text_size">18.0px</dimen>
+    <dimen name="tcl_wifi_text_info_width">120.0px</dimen>
+    <dimen name="tcl_network_height">556.0px</dimen>
+    <dimen name="tcl_network_width">300.0px</dimen>
+    <dimen name="tcl_network_manual_width">333.33334px</dimen>
+    <dimen name="tcl_network_left_margin">25px</dimen>
+    <dimen name="tcl_network_top_margin">10.0px</dimen>
+    <dimen name="tcl_wifilist_top_margin">27.333334px</dimen>
+    <dimen name="tcl_wifi_connected_icon_width">6.666667px</dimen>
+     <dimen name="tcl_wifi_list_edge_left">6.666667px</dimen>   
+    <dimen name="tcl_wifi_locked_icon_width">14.0px</dimen>
+    <dimen name="tcl_wifi_level_icon_width">22.666668px</dimen>
+    <dimen name="tcl_wifi_lockedIcon_right_margin">14.666667px</dimen>
+    <dimen name="tcl_wifi_level_right_margin">14.666667px</dimen>
+    <dimen name="tcl_wifi_less_height">148.0px</dimen>
+    <dimen name="tcl_wifi_more_height">293.33334px</dimen>
+    <dimen name="tcl_wifi_more_text_left_margin">66.66667px</dimen>
+    <dimen name="tcl_time_power_off_left_margin">1.3333334px</dimen>
+    <dimen name="tcl_time_power_off_top_margin">568.0px</dimen>
+    <dimen name="tcl_time_power_off_text_height">80.0px</dimen>
+    <dimen name="tcl_time_power_off_text_width">117.333336px</dimen>
+    <!-- end add by huangfh@tcl.com -->
+    <dimen name="fragment_menu_list_item_height">48.666668px</dimen>
+</resources>

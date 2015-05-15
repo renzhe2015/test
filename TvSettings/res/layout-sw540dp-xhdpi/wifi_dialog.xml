@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/tcl_network_manual_width"
+    android:layout_height="@dimen/tcl_network_height"
+    android:layout_marginLeft="@dimen/tcl_network_left_margin"
+    android:layout_marginTop="@dimen/tcl_network_top_margin"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_alertdialog_title"
+        style="@style/SecondTextStyle.Title"
+        android:layout_height="96px"
+        android:layout_gravity="left|top"
+        android:layout_marginLeft="18px"
+        android:text="@string/wifi_add_network" />
+
+    <LinearLayout
+        android:id="@+id/infolayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0px"
+            android:layout_marginRight="0px"
+            android:orientation="vertical" >
+
+            <com.tsb.settings.settings.view.LayoutItem
+                android:id="@+id/layout_wifistatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+            </com.tsb.settings.settings.view.LayoutItem>
+
+            <com.tsb.settings.settings.view.LayoutItem
+                android:id="@+id/layout_wifi_security"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+            </com.tsb.settings.settings.view.LayoutItem>
+
+            <com.tsb.settings.settings.view.LayoutItem
+                android:id="@+id/layout_wifi_ip_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+            </com.tsb.settings.settings.view.LayoutItem>
+            
+            <com.tsb.settings.settings.view.LayoutItem
+                android:id="@+id/layout_wifi_mac_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+            </com.tsb.settings.settings.view.LayoutItem> 
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/typelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0px"
+            android:layout_marginRight="0px"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="72px"
+                android:layout_marginLeft="0px"
+                android:layout_marginRight="0px"
+                android:orientation="horizontal"
+                android:paddingLeft="18px"
+                android:paddingRight="15px" >
+
+                <TextView
+                    style="@style/SecondTextStyle"
+                    android:layout_width="135px"
+                    android:layout_gravity="left|center_vertical"
+                    android:text="@string/wifi_ssid" />
+
+                <EditText
+                    android:id="@+id/ssid"
+                    style="@style/TCL_Edittext_style"
+                    android:layout_gravity="right|center_vertical"
+                    android:imeOptions="actionDone"
+                    android:inputType="textNoSuggestions"
+                    android:singleLine="true" />
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/divider_h" />
+
+            <com.tsb.settings.settings.view.LayoutItem
+                android:id="@+id/security"
+                android:layout_width="match_parent"
+                android:layout_height="60px" >
+            </com.tsb.settings.settings.view.LayoutItem>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fields"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/eap"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/eaplayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.tsb.settings.settings.view.LayoutItem
+                    android:id="@+id/layout_wifi_eap_method"
+                    android:layout_width="match_parent"
+                    android:layout_height="60px" >
+                </com.tsb.settings.settings.view.LayoutItem>
+
+                <com.tsb.settings.settings.view.LayoutItem
+                    android:id="@+id/phase2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60px" >
+                </com.tsb.settings.settings.view.LayoutItem>
+
+                <com.tsb.settings.settings.view.LayoutItem
+                    android:id="@+id/ca_cert"
+                    android:layout_width="match_parent"
+                    android:layout_height="60px" >
+                </com.tsb.settings.settings.view.LayoutItem>
+
+                <com.tsb.settings.settings.view.LayoutItem
+                    android:id="@+id/user_cert"
+                    android:layout_width="match_parent"
+                    android:layout_height="60px" >
+                </com.tsb.settings.settings.view.LayoutItem>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="72px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="0px"
+                    android:orientation="horizontal"
+                    android:paddingLeft="18px"
+                    android:paddingRight="15px" >
+
+                    <TextView
+                        style="@style/SecondTextStyle"
+                        android:layout_width="135px"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="@string/wifi_eap_identity" />
+
+                    <EditText
+                        android:id="@+id/identity"
+                        style="@style/TCL_Edittext_style"
+                        android:layout_gravity="right|center_vertical"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true" />
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/divider_h" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="72px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="0px"
+                    android:orientation="horizontal"
+                    android:paddingLeft="18px"
+                    android:paddingRight="15px" >
+
+                    <TextView
+                        style="@style/SecondTextStyle"
+                        android:layout_width="135px"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="@string/wifi_eap_anonymous" />
+
+                    <EditText
+                        android:id="@+id/anonymous"
+                        style="@style/TCL_Edittext_style"
+                        android:layout_gravity="right|center_vertical"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true" />
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/divider_h" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="72px"
+            android:layout_marginLeft="0px"
+            android:layout_marginRight="0px"
+            android:orientation="horizontal"
+            android:paddingLeft="18px"
+            android:paddingRight="15px" >
+
+            <TextView
+                style="@style/SecondTextStyle"
+                android:layout_width="135px"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/wifi_password" />
+
+            <EditText
+                android:id="@+id/password"
+                style="@style/TCL_Edittext_style"
+                android:layout_gravity="right|center_vertical"
+                android:imeOptions="actionDone"
+                android:textSize="@dimen/tcl_wifi_text_size"
+                android:password="true"
+                android:singleLine="true" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/divider_h" />
+
+        <!--
+                   <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="48px"
+                        android:layout_marginLeft="0px"
+                        android:layout_marginRight="0px"
+                        android:paddingLeft="12px"
+                        android:paddingRight="10px"
+                        android:orientation="horizontal" > 
+                       <TextView
+                            style="@style/SecondTextStyle"
+                            android:layout_width="90px"
+                            android:text="@string/wifi_show_password"  />
+
+                        <com.tsb.tv.settings.view.TCLSwitchBar
+			                android:id="@+id/show_password"
+			                android:layout_width="wrap_content"
+			                android:layout_height="30px"
+			                android:layout_gravity="right|center_vertical"
+			                style="@style/TCL_Switchbar_style"
+			                /> 
+                   </FrameLayout>
+                   <ImageView
+							        android:layout_width="match_parent"
+							        android:layout_height="wrap_content"
+							        android:src="@drawable/divider_h" />
+        -->
+
+        <Switch
+            android:id="@+id/show_password"
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:background="@drawable/sub_menu_selector"
+            android:paddingLeft="5px"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_off" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/divider_h" />
+
+        <LinearLayout
+            android:id="@+id/linear_keychange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0px"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <com.tsb.settings.settings.view.LayoutItem
+                android:id="@+id/wepkeycontent"
+                android:layout_width="match_parent"
+                android:layout_height="60px" >
+            </com.tsb.settings.settings.view.LayoutItem>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_button_type1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0px"
+        android:layout_marginRight="0px"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btn_connect"
+            style="@style/SecondStyle_Button"
+            android:layout_width="195px"
+            android:layout_height="75px"
+            android:layout_marginLeft="22.5px"
+            android:layout_marginTop="30px"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btn_forget"
+            style="@style/SecondStyle_Button"
+            android:layout_width="195px"
+            android:layout_height="75px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_button_type2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0px"
+        android:layout_marginRight="0px"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btn_save_connect"
+            style="@style/SecondStyle_Button"
+            android:layout_width="408px"
+            android:layout_height="75px"
+            android:layout_marginLeft="22.5px"
+            android:layout_marginTop="30px"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

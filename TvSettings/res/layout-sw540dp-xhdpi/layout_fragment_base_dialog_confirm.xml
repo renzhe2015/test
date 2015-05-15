@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Pane.Dialog"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_title"
+        style="@style/Widget.Tv.TextView.Title"
+        android:text="@null" />
+
+    <TextView
+        android:id="@+id/text_message"
+        style="@style/Widget.Tv.TextView.Message"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:text="@null" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_cancel"
+            style="@style/Widget.Tv.ButtonBarButton"
+            android:text="@android:string/cancel" >
+
+            <requestFocus />
+        </Button>
+
+        <Button
+            android:id="@+id/button_ok"
+            style="@style/Widget.Tv.ButtonBarButton"
+            android:text="@android:string/ok" />
+    </LinearLayout>
+
+</LinearLayout>

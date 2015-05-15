@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="background_dark">#364F52</color>
+    <color name="background_light">#577981</color>   
+    <color name="background_tvinfo_now">#F4A800</color>
+    <color name="background_tvinfo_next">#00A399</color>
+    <color name="background_tvinfo_prev">#00A399</color>   
+    <color name="background">#80AEAEAE</color>
+    <color name="divider">#80454545</color>
+    <color name="progress_start">#80FF0000</color>
+    <color name="progress_end">#8000FF00</color>
+    <color name="title_background">#D1D2D4</color>
+    <color name="title_textcolor">#212221</color>
+    <color name="listview_background">#999B9A</color>
+    <color name="listview_textcolor">#ffffffff</color>
+    <color name="win_title_color">#272727</color>
+    <color name="dialog_background">#002122</color>
+    <color name="redcolor">#eb2626</color>
+    <color name="black">#000</color>
+    <color name="red">#F00</color>
+    <color name="aniBackColor">#FF000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="rulecolor">#ff1e1d1d</color>
+    <color name="transparent_background">#00000000</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="gray_color">#77777777</color>
+    <color name="yellow_color">#FFf9da06</color>
+    <color name="transport">#00000000</color>
+    <color name="time_edit_color_gray">#d0d0d0</color>
+    <color name="time_edit_color_red">#cc0000</color>
+    <color name="time_edit_select_white_color">#FdFeFF</color>
+    <color name="childlock_title_color">#474c77</color>
+    <color name="childlock_lockperiod_color">#545454</color>
+    <color name="font_color">#ebebeb</color>
+    <color name="title_color">#f8ab33</color>
+    <color name="font_focus_color">#ffc71d</color>
+    <color name="font_enable_color">#e1e1e1</color>
+    <color name="font_disable_color">#808080</color>
+    <color name="text_unfocus">#c6c6c6</color>
+    <color name="text_focus">#080808</color>
+    <color name="text_ip_title_color">#5c5c5c</color>
+    <color name="TextItemSelectedColor">#F8AB33</color>
+   	<color name="white">#ffffffff</color>
+   	<drawable name="translucent">#00000000</drawable>  	
+	<color name="translucent">#00000000</color>
+</resources>

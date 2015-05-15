@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="@dimen/tcl_network_manual_width"
+    android:layout_height="@dimen/tcl_network_height"
+    android:layout_marginLeft="@dimen/tcl_network_left_margin"
+    android:layout_marginTop="@dimen/tcl_network_top_margin"
+    android:orientation="vertical" >
+    <FrameLayout android:id="@+id/layout_third_menu"
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView style="@style/SecondTextStyle.Title"
+            	android:layout_gravity="left"
+            	android:layout_marginLeft="12.0px"
+                android:text="@string/tcl_network_speed_test"
+                />
+        </FrameLayout>
+        
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100.0px"
+            android:orientation="vertical">
+		    
+        	<FrameLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10.0px"
+		        android:layout_gravity="left" >
+	
+		        <ImageView
+		            android:layout_width="305.0px"
+		            android:layout_height="150.0px"
+		            android:layout_alignParentLeft="true"
+		            android:layout_marginLeft="0.0px"
+		            android:layout_marginTop="0.0px"
+		            android:src="@drawable/downloadclock" />
+		
+		        <ImageView
+		            android:id="@+id/firstminute"
+		            android:layout_width="53.0px"
+		            android:layout_height="108.0px"
+		            android:layout_alignParentLeft="true"
+		            android:layout_marginLeft="125.0px"
+		            android:layout_marginTop="42.0px"
+		            android:src="@drawable/downloadminute" />
+	    	</FrameLayout>
+	    	
+        	<LinearLayout android:id="@+id/layout_speed_test_progress"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="60.0px"
+		        android:orientation="horizontal"
+		        android:visibility="gone" >
+	        	<ProgressBar
+					android:id="@+id/progress_speed_test"
+					android:layout_width="230.0px"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="24.0px"
+					android:layout_gravity="center_vertical"
+					android:max="100"	
+					android:thumbOffset="0.0px"/>	
+				<TextView android:id="@+id/tv_speed_test_progress"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginLeft="5.0px"
+				    android:textColor="@color/font_color"
+				    android:textSize="18.0px"
+				    android:layout_gravity="center"
+				    android:text="@string/tv_speed_test_progress"
+				    />
+			</LinearLayout>
+			
+        	<LinearLayout android:id="@+id/layout_speed_test_result"
+        	    android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="60.0px"
+		        android:orientation="vertical"
+		        android:visibility="gone"
+        	    >
+        	   <!--  <LinearLayout android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginTop="3.3333335px"
+        	        android:orientation="horizontal">
+        	        <TextView 
+				    android:layout_width="100.0px"
+				    android:layout_height="wrap_content"
+				    android:layout_marginLeft="11.333334px"
+				    android:textSize="13.333334sp"
+				    android:textColor="@color/font_color"
+				    android:text="@string/speed_test_time"
+				    />
+        	        <TextView android:id="@+id/tv_speed_test_time"
+				    android:layout_width="80.0px"
+				    android:layout_height="wrap_content"
+				    android:gravity="right"
+				    android:textSize="13.333334sp"
+				    android:textColor="@color/font_color"
+				    android:text="@string/tv_speed_test_progress"
+				    />
+        	    </LinearLayout> -->
+        	    
+        	    <LinearLayout android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginTop="5.0px"
+        	        android:orientation="horizontal">
+        	        <TextView 
+				    android:layout_width="150.0px"
+				    android:layout_height="wrap_content"
+				    android:layout_marginLeft="20.333334px"
+				    android:textSize="18.0px"
+				    android:textColor="@color/font_color"
+				    android:text="@string/speed_test_average_speed"
+				    />
+        	        <TextView android:id="@+id/tv_speed_test_average"
+				    android:layout_width="120.0px"
+				    android:layout_height="wrap_content"
+				    android:gravity="right"
+				    android:textSize="18.0px"
+				    android:textColor="@color/font_color"
+				    android:text="@string/tv_speed_test_progress"
+				    />
+        	    </LinearLayout>       	 
+        	    
+        	    <LinearLayout android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginTop="5.0px"
+        	        android:orientation="horizontal">
+        	        <TextView 
+				    android:layout_width="150.0px"
+				    android:layout_height="wrap_content"
+				    android:layout_marginLeft="20.333334px"
+				    android:textSize="18.0px"
+				    android:textColor="@color/font_color"
+				    android:text="@string/speed_test_bandwidth"
+				    />
+        	        <TextView android:id="@+id/tv_speed_test_bandwidth"
+				    android:layout_width="120.0px"
+				    android:layout_height="wrap_content"
+				    android:gravity="right"
+				    android:textSize="18.0px"
+				    android:textColor="@color/font_color"
+				    android:text="@string/tv_speed_test_progress"
+				    />
+        	    </LinearLayout>
+        	    
+        	    <LinearLayout android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginTop="5.0px"
+        	        android:orientation="horizontal">
+        	        <TextView 
+				    android:layout_width="150.0px"
+				    android:layout_height="wrap_content"
+				    android:layout_marginLeft="20.333334px"
+				    android:textSize="18.0px"
+				    android:textColor="@color/font_color"
+				    android:text="@string/speed_test_video"
+				    />
+        	        <TextView android:id="@+id/tv_speed_test_video"
+				    android:layout_width="120.0px"
+				    android:layout_height="wrap_content"
+				    android:gravity="right"
+				    android:textSize="18.0px"
+				    android:textColor="@color/font_color"
+				    android:text="@string/speed_test_video_normal"
+				    />
+        	    </LinearLayout>
+        	</LinearLayout>	
+        	
+        	<FrameLayout android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            >
+            <Button android:id="@+id/btn_speed_test_start"
+                style="@style/SecondStyle_Button"
+            	android:layout_width="285.0px"
+                android:layout_height="50.0px"
+                android:layout_marginTop="60.0px"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20.0px"               
+                android:text="@string/speed_test_start"
+                />
+        </FrameLayout>												
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/picture_settings_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadeScrollbars="true"
+    android:focusable="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/container_tabs"
+        android:layout_width="700.0px"
+        android:layout_height="1080.0px"
+        android:orientation="vertical" >
+
+        <com.tsb.settings.settings.view.LayoutItem
+            android:id="@+id/layout_effect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.tsb.settings.settings.view.LayoutItem>
+        
+        <com.tsb.settings.settings.view.LayoutItem
+            android:id="@+id/layout_scene"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.tsb.settings.settings.view.LayoutItem>
+        
+        <com.tsb.settings.settings.view.LayoutItem
+            android:id="@+id/layout_smartvolumn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.tsb.settings.settings.view.LayoutItem>
+
+  		<com.tsb.settings.settings.view.LayoutItem
+            android:id="@+id/layout_voice_spdif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.tsb.settings.settings.view.LayoutItem>
+
+        <com.tsb.settings.settings.view.LayoutItem
+            android:id="@+id/layout_advance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.tsb.settings.settings.view.LayoutItem>
+    </LinearLayout>
+</ScrollView>

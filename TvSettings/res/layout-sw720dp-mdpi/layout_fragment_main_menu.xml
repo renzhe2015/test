@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="@dimen/fragment_main_layout_width"
+        android:layout_height="@dimen/fragment_main_layout_height"
+        android:layout_gravity="center_horizontal|left"
+        android:addStatesFromChildren="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/container_tabs"
+            android:layout_width="@dimen/fragment_main_tab_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="@dimen/fragment_main_tab_layout_top_space"
+            android:background="@drawable/background_left_menu"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/TextView_Menu_Tab"
+                android:layout_marginTop="32.666668px"
+                android:id="@+id/btn_tab_picture"
+                android:drawableLeft="@drawable/ic_menu_tab_picture"
+                android:text="@string/tcl_image_setting" 
+                android:nextFocusUp="@+id/btn_tab_setup"
+                android:nextFocusDown="@+id/btn_tab_sound"
+                />
+            <TextView
+                style="@style/TextView_Menu_Tab"
+                android:id="@+id/btn_tab_sound"
+                android:drawableLeft="@drawable/ic_menu_tab_sound"
+                android:text="@string/tcl_sound_setting" 
+                android:textColor="@color/main_menu_font_color"
+                android:nextFocusUp="@+id/btn_tab_picture"
+                android:nextFocusDown="@+id/btn_tab_scan"
+                />
+            <TextView
+                style="@style/TextView_Menu_Tab"
+                android:id="@+id/btn_tab_scan"
+                android:drawableLeft="@drawable/ic_menu_tab_scan"
+                android:text="@string/tcl_scan_setting"
+                android:nextFocusUp="@+id/btn_tab_sound"
+                android:nextFocusDown="@+id/btn_tab_network"               
+                />
+            <TextView
+                style="@style/TextView_Menu_Tab"
+                android:id="@+id/btn_tab_network"
+                android:drawableLeft="@drawable/ic_menu_tab_mode"
+                android:text="@string/tcl_network_setting" 
+                android:nextFocusUp="@+id/btn_tab_scan"
+                android:nextFocusDown="@+id/btn_tab_setup"
+                />
+            <TextView
+                style="@style/TextView_Menu_Tab"
+                android:id="@+id/btn_tab_setup"
+                android:drawableLeft="@drawable/ic_menu_tab_setup"
+                android:text="@string/tcl_setup_setting" 
+                android:nextFocusUp="@+id/btn_tab_network"
+                android:nextFocusDown="@+id/btn_tab_picture"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="166.66667px"
+                android:drawableLeft="@drawable/guide_csl_udrl1"
+                android:drawablePadding="20.0px"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20.0px"
+                android:textColor="@color/font_enable_color"
+                android:text="@string/tcl_tip_move"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13.333334px"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20.0px"
+                android:textColor="@color/font_enable_color"
+                android:text="@string/tcl_tip_ok"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13.333334px"
+                android:drawableLeft="@drawable/tcl_guide_return1"
+                android:drawablePadding="20.0px"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20.0px"
+                android:textColor="@color/font_enable_color"
+                android:text="@string/tcl_tip_back"/>
+        </LinearLayout>
+        
+<!--         <LinearLayout
+            android:id="@+id/container_tabs_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/background_mid"
+            android:orientation="vertical" >
+            
+        </LinearLayout>   -->
+        
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/background_right"
+            android:orientation="vertical" >
+            
+	        <FrameLayout
+	            android:id="@+id/container_menu"
+	            android:layout_width="550.0px"
+	            android:layout_height="980.0px"
+	            android:layout_marginTop="83.333336px"
+	            android:focusable="false"
+	            android:padding="3.0px" >
+	        </FrameLayout>            
+        </LinearLayout>          
+                
+    </LinearLayout>
+    <FrameLayout
+            android:id="@+id/layout_third_menu"
+            android:layout_width="25.0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/fragment_main_tab_layout_width"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="25.0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0.0dp"
+                android:background="@drawable/bg_third_divider" />
+
+            <ImageView
+                android:layout_width="10.0px"
+                android:layout_height="10.0px"
+                android:layout_marginTop="42.0px"
+                android:layout_marginLeft="7.0px"
+                android:background="@drawable/arrow" />
+    </FrameLayout>
+    <TextView 
+        android:id="@+id/settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25.333334px"
+        android:layout_marginTop="25.333334px"
+        android:textSize="36.666668px"
+        android:textColor="@color/title_color"
+        android:text=" "/>
+</FrameLayout>

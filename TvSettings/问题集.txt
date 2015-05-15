@@ -1,0 +1,28 @@
+﻿1 使用OptionMenuItem组件，在BaseMenuFragment里无法获取到mListView的OnItemClickListener事件。
+出错原因：
+
+2 SourceSelectFragment界面，焦点无法从ListView移动到Search Button上？
+
+3 9735进入工厂后，TV Menu不消失?界面冻结？
+出错原因：TV server死掉。泰霖修正。
+界面冻结：
+
+4 右边弹出选择框，第一次谈到左上角，第二次才会正常。
+
+
+5 OptionMenuItem，在图像Fragment上面刷新不出数据。
+ 	 在OptionMenuItem方法onBindView里，设置title的值，在设置Value值时，
+ValueView就为null。重新使用findViewById找到对象后，一样无法设置value值。
+	使用Debug调试，每次又可以。延时刷新value值仍然无法解决。
+	
+	7-19 通过log查看，value的TextValue的对象值一直在变。
+	如：打开一次图像菜单
+	图像有7个OptionMenuItem，先进入onBindView（）7次，每次的value的Ui对象一样，假设为A。
+	 然后再进入onBindView()7次，创建真正意义上的value的UI，UI对象不同，为：B1~B7
+	 然后再进入onBindView()7次，每次的value的UI对象一样，为：C
+	 
+	暂时解决办法：初始化value值不再延时1秒，可以更新值。但有时仍然更新不了，存在同步问题。
+	
+6 ATV微调，调整频点偏移量后，会出现信号重新识别，偏移量会失效。
+需泰霖查底层接口：TvManager.getTvCurChFreqOffset() 和 TvManager.fineTuneCurFrequency(offset, true)
+3

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="473.33334px"
+    android:layout_height="41.333336px"
+    android:duplicateParentState="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+<!-- 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_item_setting_left" /> -->
+        
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_item_setting_left" 
+		android:layout_marginLeft="6.666667px"/>
+
+    <TextView
+        android:id="@+id/text_control"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:duplicateParentState="true"
+        android:gravity="center_horizontal"
+        android:text="@null"
+        android:textColor="@drawable/item_generic_textcolor"
+        android:textSize="22.0px" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_item_setting_right" 
+		android:layout_marginRight="20.0px"/>
+
+</LinearLayout>

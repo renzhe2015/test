@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">               
+    <!-- 按下状态 -->        
+    <item               
+        android:state_focused="true"             
+        android:drawable="@drawable/thumbpoint" />    
+    <!-- 普通无焦点状态 -->        
+    <item        
+        android:state_focused="false"              
+        android:drawable="@drawable/thumbpoint" />
+</selector>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Disabled -->
+    <item android:state_enabled="false" android:drawable="@drawable/btn_focused">
+	</item>
+    
+	<!-- Pressed -->
+	<item android:state_pressed="true" android:drawable="@drawable/btn_press">
+	</item>
+	<!-- Focused -->
+	<item android:state_focused="true" android:drawable="@drawable/btn_press">
+	</item>
+
+</selector>

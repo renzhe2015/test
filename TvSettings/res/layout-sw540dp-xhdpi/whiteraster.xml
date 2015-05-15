@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TSBFactoryMode" 
+    
+	android:background="@color/WHITE"
+    >
+    <!-- 
+	<ImageView android:id="@+id/red_M" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_alignParentRight="true"
+	android:layout_alignParentTop="true"
+	android:adjustViewBounds="true"
+	android:layout_marginRight="35dp"
+	android:layout_marginTop="45dp"	
+	android:maxWidth="42dp"
+	android:maxHeight="42dp"
+	android:scaleType="fitCenter"
+	android:src="@drawable/red_m"
+	/> -->
+  
+
+</RelativeLayout>

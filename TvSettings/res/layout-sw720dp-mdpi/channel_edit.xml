@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button 
+        android:id="@+id/addFavorite"
+        android:layout_width="205.0px"
+    	android:layout_height="60px"
+    	android:textColor="@color/white"
+    	android:textSize="18px"
+    	android:background="@drawable/channel_edit_btn"
+    	android:text="@string/channellist_addfavorite"/>
+     <Button 
+        android:id="@+id/editName"
+        android:layout_width="205.0px"
+        android:textSize="18px"
+        android:textColor="@color/white"
+    	android:layout_height="60px"
+    	android:background="@drawable/channel_edit_btn"
+    	android:text="@string/channellist_nameedit"/>
+    
+    </LinearLayout>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Widget.Tv.TextView.AtvTuing.Item" parent="android:Widget.Holo.TextView">
+        <item name="android:background">@drawable/item_atvtune_background</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:focusable">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">8.0px</item>
+        <item name="android:layout_marginTop">8.0px</item>
+        <item name="android:shadowColor">#FB3C3F3B</item>
+        <item name="android:layout_height">25.0px</item>
+        <item name="android:layout_width">120.0px</item>
+        <item name="android:layout_marginLeft">4.0px</item>
+        <item name="android:layout_marginRight">4.0px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@drawable/item_generic_textcolor</item>
+        <item name="android:textSize">16px</item>
+    </style>
+    <style name="Widget.Tv.TextView.AtvTuing.Item.ext" parent="android:Widget.Holo.TextView">
+        <item name="android:background">#00000000</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:focusable">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">8.0px</item>
+        <item name="android:layout_marginTop">8.0px</item>
+        <item name="android:shadowColor">#FB3C3F3B</item>
+        <item name="android:layout_height">25.0px</item>
+        <item name="android:layout_width">120.0px</item>
+        <item name="android:layout_marginLeft">4.0px</item>
+        <item name="android:layout_marginRight">4.0px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@drawable/item_generic_textcolor</item>
+        <item name="android:textSize">16px</item>
+    </style>    
+    <style name="Widget.Tv.TextView.AtvTuing.Item.Title" parent="android:Widget.Holo.TextView">
+        <item name="android:layout_height">28.0px</item>
+        <item name="android:layout_width">100.0px</item>
+        <item name="android:layout_marginLeft">0.0px</item>
+        <item name="android:layout_marginRight">4.0px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">15px</item>
+    </style>
+    <style name="Widget.Tv.EditText.AtvTuing.Item" parent="android:Widget.Holo.EditText">
+        <item name="android:background">@drawable/item_atvtune_background</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">8.0px</item>
+        <item name="android:layout_marginTop">8.0px</item>
+        <item name="android:shadowColor">#FB3C3F3B</item>
+        <item name="android:layout_height">25.0px</item>
+        <item name="android:layout_width">173.33334px</item>
+        <item name="android:layout_marginLeft">10.0px</item>
+        <item name="android:layout_marginRight">4.0px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@drawable/item_generic_textcolor</item>
+        <item name="android:textSize">16px</item>
+        <item name="android:imeOptions">flagNoFullscreen</item>
+        
+    </style>
+    <style name="Widget.Tv.ImageView.AtvTuing.Item" parent="android:Widget.Holo">
+        <item name="android:background">@drawable/item_atvtune_background</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_height">20.0px</item>
+        <item name="android:layout_width">30.0px</item>
+        <item name="android:layout_marginTop">8.0px</item>
+        <item name="android:layout_marginBottom">8.0px</item>
+        <item name="android:layout_marginLeft">2.0px</item>
+        <item name="android:layout_marginRight">2.0px</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+    
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/translucent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/translucent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    
+    <style name="Widget.Tv.TextView" parent="android:Widget.Holo.TextView">
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16px</item>
+    </style>
+
+    <style name="Widget.Tv.TextView.Title" parent="Widget.Tv.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/pane_height_dialog_title</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">24px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/ORAGNE</item>
+    </style>
+
+    <style name="Widget.Tv.TextView.Hint" parent="Widget.Tv.TextView">
+        <item name="android:drawablePadding">7.5px</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Widget.Tv.ButtonBarButton" parent="android:Widget.Holo.Button">
+        <item name="android:layout_width">53.333336px</item>
+        <item name="android:layout_height">37.5px</item>
+        <item name="android:background">@drawable/btn_generic_background</item>
+        <item name="android:layout_marginTop">10.0px</item>
+        <item name="android:layout_marginBottom">10.0px</item>
+        <item name="android:layout_marginRight">14.0px</item>
+        <item name="android:layout_marginLeft">14.0px</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">12px</item>
+    </style>
+    <style name="Widget.Tv.ButtonBarButton.Tunning" parent="Widget.Tv.ButtonBarButton">
+        <item name="android:layout_width">100.0px</item>
+        <item name="android:layout_height">26.666668px</item>
+        <item name="android:background">@drawable/btn_tunning_background</item>
+        <item name="android:layout_marginTop">10.0px</item>
+        <item name="android:layout_marginBottom">10.0px</item>
+        <item name="android:layout_marginRight">14.0px</item>
+        <item name="android:layout_marginLeft">14.0px</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16px</item>
+    </style>
+
+    <style name="Widget.Tv.TextView.Message" parent="Widget.Tv.TextView">
+        <item name="android:paddingLeft">@dimen/pane_padding</item>
+        <item name="android:paddingRight">@dimen/pane_padding</item>
+        <item name="android:textColor">#F5F5F5</item>
+        <item name="android:textSize">16px</item>
+        <item name="android:minLines">3</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Pane">
+        <item name="android:background">@drawable/dialog_background</item>
+    </style>
+    <style name="Pane.ATVManual">
+        <item name="android:layout_width">300.0px</item>
+        <item name="android:layout_height">300.0px</item>
+    </style>
+
+    <style name="Pane.Dialog">
+        <item name="android:layout_width">@dimen/pane_width_dialog</item>
+        <item name="android:layout_height">@dimen/pane_height_dialog</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="Pane.TVAutoSearch">
+        <item name="android:layout_width">366.6667px</item>
+        <item name="android:layout_height">233.33334px</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    
+    <style name="Pane.TVManualSearch">
+        <item name="android:layout_width">333.33334px</item>
+        <item name="android:layout_height">233.33334px</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <!-- TV Informations -->
+    <style name="Pane.TvStatus" parent="Pane">
+        <item name="android:layout_margin">@dimen/pane_padding_quarter</item>
+        <item name="android:padding">@dimen/pane_padding_quarter</item>
+    </style>
+    <style name="Widget.Tv.TextView.TvInfo" parent="android:Widget.Holo.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.Widget.TextView.TvInfo</item>
+    </style>
+
+    <style name="Widget.Tv.TextView.TvInfo.Yellow" parent="android:Widget.Holo.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.Widget.TextView.TvInfo</item>
+        <item name="android:textColor">#F4A800</item>
+    </style>
+
+    <style name="TextAppearance.Widget.TextView.TvInfo" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">#F2F2F2</item>
+        <item name="android:textSize">18.666668px</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- TV Informations - Program - Time -->
+    <style name="Widget.Tv.TextView.TvInfoTime" parent="android:Widget.Holo.TextView">
+        <item name="android:background">@color/background_tvinfo_now</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">14.666667sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">1.0px</item>
+        <item name="android:textAppearance">@style/TextAppearance.Widget.TextView.TvInfoTime.Now</item>
+    </style>
+
+    <style name="TextAppearance.Widget.TextView.TvInfoTime" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textSize">9px</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Widget.TextView.TvInfoTime.Now" parent="TextAppearance.Widget.TextView.TvInfoTime">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="TextAppearance.Widget.TextView.TvInfoTime.Next" parent="TextAppearance.Widget.TextView.TvInfoTime">
+        <item name="android:textColor">#364F52</item>
+    </style>
+
+    <style name="TextAppearance.Widget.TextView.TvInfoTime.Prev" parent="TextAppearance.Widget.TextView.TvInfoTime">
+        <item name="android:textColor">#364F52</item>
+    </style>
+
+    <style name="Pane.ButtonBar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="SecondStyle_Button">
+        <item name="android:layout_width">140.0px</item>
+        <item name="android:layout_height">40.0px</item>
+        <item name="android:textSize">18px</item>
+        <item name="android:background">@drawable/btn_selector</item>
+        <item name="android:textColor">@color/btn_text_color</item>
+    </style>
+    
+    <style name="TextView_Menu_Tab">
+        <item name="android:layout_width">@dimen/fragment_main_tab_width</item>
+        <item name="android:layout_height">@dimen/fragment_main_tab_height</item>
+        <item name="android:layout_marginTop">@dimen/fragment_main_tab_horizontal_space</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingLeft">@dimen/fragment_main_tab_paddingLandR</item>
+        <item name="android:paddingRight">@dimen/fragment_main_tab_paddingLandR</item>
+        <item name="android:paddingTop">@dimen/fragment_main_tab_paddingTandB</item>
+        <item name="android:paddingBottom">@dimen/fragment_main_tab_paddingTandB</item>
+        <item name="android:background">@drawable/ic_menu_tab_focus</item>
+        <item name="android:textSize">@dimen/fragment_main_tab_text_size</item>
+        <item name="android:textColor">@color/main_menu_font_color</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:scaleType">fitXY</item>        
+	<item name="android:drawablePadding">3.3333335px</item>
+    </style>
+
+  <!-- add by huangfh@tcl.com -->
+    <style name="SecondTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18px</item>
+        <item name="android:textColor">@color/text_unfocus</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <style name="TCL_Edittext_style">
+        <item name="android:layout_width">200.0px</item>
+        <item name="android:layout_height">40.0px</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">#d8d8d8</item>
+        <item name="android:paddingLeft">12.0px</item>
+        <item name="android:paddingRight">3.0px</item>
+        <item name="android:background">@drawable/edittext_button_selector</item>
+    </style>
+
+    <style name="TCL_Switchbar_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20px</item>
+    </style>
+
+    <style name="SecondTextStyle.Title" parent="SecondTextStyle">
+        <item name="android:textSize">30px</item>
+        <item name="android:textColor">#555555</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Theme.Transparent" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!--end-->
+</resources>

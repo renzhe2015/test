@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/SecondTextStyle"
+        android:layout_width="1.5px"
+        android:layout_marginRight="0px"
+        android:layout_marginLeft="0px"
+        android:gravity="left|center_vertical"
+	 />
+
+    <LinearLayout
+        android:layout_width="300px"
+        android:layout_height="60px"
+        android:id="@+id/layout"
+        android:background="@drawable/edittext_button_selector"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edt1"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingLeft="3px"
+            android:paddingRight="3px"
+            android:singleLine="true"
+            android:textColor="#d8d8d8"
+            android:maxLength="3"
+            android:textSize="@dimen/tcl_wifi_text_size"
+            android:numeric="integer"
+            android:phoneNumber="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="6px"
+            android:text="@string/ethernet_dote"
+            android:textColor="#d8d8d8"
+            android:textSize="@dimen/tcl_wifi_text_size" />
+
+        <EditText
+            android:id="@+id/edt2"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingLeft="0px"
+            android:paddingRight="0px"
+            android:singleLine="true"
+            android:textColor="#d8d8d8"
+            android:maxLength="3"
+            android:textSize="@dimen/tcl_wifi_text_size"
+            android:numeric="integer" 
+            android:phoneNumber="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="6px"
+            android:text="@string/ethernet_dote"
+            android:textColor="#d8d8d8"
+            android:textSize="@dimen/tcl_wifi_text_size" />
+
+        <EditText
+            android:id="@+id/edt3"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingLeft="3px"
+            android:paddingRight="3px"
+            android:singleLine="true"
+            android:maxLength="3"
+            android:textColor="#d8d8d8"
+            android:textSize="@dimen/tcl_wifi_text_size"
+            android:numeric="integer"
+            android:phoneNumber="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="6px"
+            android:text="@string/ethernet_dote"
+            android:textColor="#d8d8d8"
+            android:textSize="@dimen/tcl_wifi_text_size" />
+
+        <EditText
+            android:id="@+id/edt4"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:gravity="center"
+            android:maxLength="3"
+            android:paddingLeft="3px"
+            android:paddingRight="3px"
+            android:singleLine="true"
+            android:textColor="#d8d8d8"
+            android:textSize="@dimen/tcl_wifi_text_size"
+            android:numeric="integer"
+            android:phoneNumber="true"/>
+    </LinearLayout>
+
+</LinearLayout>

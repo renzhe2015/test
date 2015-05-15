@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_list_item"
+    android:textSize="33px"
+    android:singleLine="true"
+    android:ellipsize="marquee"
+    android:layout_width="match_parent"
+    android:layout_height="57px"
+    android:gravity="center"
+    android:descendantFocusability="blocksDescendants" 
+    android:textColor="@color/layout_text_color"
+    android:layout_gravity="center"/>

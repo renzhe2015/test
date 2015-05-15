@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fragment_menu_list_item_height"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/wifi_connectedIcon"
+        android:layout_width="@dimen/tcl_wifi_connected_icon_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/tcl_wifi_list_edge_left"
+        android:duplicateParentState="true" />
+
+    <TextView
+        android:id="@+id/wifi_name"
+        style="@style/SecondTextStyle"
+        android:layout_width="200.0px"
+        android:layout_height="@dimen/fragment_menu_list_item_height"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20.0px"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal"
+        android:singleLine="true"
+        android:textColor="@color/layout_wifilist_text_color" />
+
+    <ImageView
+        android:id="@+id/wifi_lockedIcon"
+        android:layout_width="@dimen/tcl_wifi_locked_icon_width"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/tcl_wifi_lockedIcon_right_margin"
+     />
+
+    <ImageView
+        android:id="@+id/wifi_level"
+        android:layout_width="@dimen/tcl_wifi_level_icon_width"
+        android:layout_height="wrap_content"
+     />
+
+  <!--   <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="4.0px"
+        android:layout_height="6.666667px"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/arrow_right_unfocus"
+        android:contentDescription="@string/string_null" /> -->
+
+</LinearLayout>

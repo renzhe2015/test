@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:focusable="true" >
+    
+    <ImageView
+	    android:id="@+id/code_setting_background"
+	    android:layout_width="480.0px"
+	    android:layout_height="270.0px" 
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:contentDescription="@string/app_name"
+	    android:src="@drawable/chidrenmode_code_background1">        
+    </ImageView>
+
+    <TextView 
+	    android:id="@+id/system_language"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:text="@string/tcl_system_language"
+	    android:textSize="12.5sp"
+	    android:layout_marginLeft="470.0px"
+	    android:layout_marginTop="236.0px"
+	    android:textStyle="bold"
+	    android:textColor="@color/title_color" >        
+    </TextView>
+
+    <TextView
+        android:id="@+id/language_ch"
+        android:layout_width="200.0px"
+        android:layout_height="40.0px"
+        android:layout_marginTop="32.0px"
+        android:gravity="center"
+        android:layout_alignLeft="@+id/system_language"
+        android:layout_below="@+id/system_language"        
+        android:background="@drawable/edit_normal"
+        android:focusable="true"
+        android:text="@string/tcl_system_language_ch"
+        android:textSize="9.0sp" />
+
+    <TextView
+        android:id="@+id/language_en"
+        android:layout_width="200.0px"
+        android:layout_height="42.0px"
+        android:layout_marginTop="16.0px"
+        android:gravity="center"
+        android:layout_alignLeft="@+id/language_ch"
+        android:layout_below="@+id/language_ch"        
+        android:background="@drawable/edit_normal"
+        android:focusable="true"
+        android:text="@string/tcl_system_language_en"
+        android:textSize="9.0sp" />
+
+    <ImageView
+        android:id="@+id/language_foucs"
+        android:layout_width="130.0px"
+        android:layout_height="48.0px"
+        android:layout_alignLeft="@+id/language_sure"
+        android:layout_alignTop="@+id/language_sure"
+        android:background="@drawable/setting_focus_change"
+        android:contentDescription="@string/app_name" />
+
+    <Button
+        android:id="@+id/language_sure"
+        android:layout_width="130.0px"
+        android:layout_height="48.0px"
+        android:layout_alignLeft="@+id/language_en"
+        android:layout_below="@+id/language_en"
+        android:layout_marginTop="30.0px"
+        android:background="@drawable/item_normal"
+        android:textColor="@color/btn_text_color"
+        android:focusable="true"
+        android:text="@string/tcl_system_confirm"
+        android:textSize="7.5sp" >
+	    <requestFocus>        
+	    </requestFocus>       
+    </Button>
+
+
+    <Button
+        android:id="@+id/language_cancel"
+        android:layout_width="130.0px"
+        android:layout_height="48.0px"
+        android:layout_alignTop="@+id/language_sure"
+        android:layout_toRightOf="@+id/language_en"
+        android:background="@drawable/item_normal"
+        android:textColor="@color/btn_text_color"
+        android:focusable="true"
+        android:text="@string/tcl_system_cancel"
+        android:textSize="7.5sp" />
+        
+</RelativeLayout>

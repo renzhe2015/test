@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="750px"
+    android:layout_height="600px"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="750px"
+    	android:layout_height="600px"
+    	android:layout_gravity="center"
+    	android:background="@drawable/system_pop_frame_bg"
+    	android:orientation="vertical">
+    	
+        <TextView
+        android:id="@+id/input_type_title"
+        android:layout_width="630px"
+        android:layout_height="75px"        
+        android:layout_marginLeft="45px"
+        android:layout_marginTop="9px"
+        android:textColor="@color/TextItemSelectedColor"
+        android:textSize="21sp"
+        android:text="@string/tcl_system_inputmethod" >
+    	</TextView>
+    	
+        <ListView
+        android:id="@+id/input_type_list"
+        android:layout_width="630px"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="45px"
+        android:layout_marginTop="15px"
+        android:divider="@drawable/setting_list_divider"
+        android:choiceMode="none"
+        android:fadeScrollbars="false"
+        android:listSelector="@android:color/transparent"
+        android:requiresFadingEdge="vertical"
+        android:scrollbarStyle="outsideOverlay" />
+    </LinearLayout>
+    
+
+</LinearLayout>

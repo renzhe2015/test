@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="720px"
+    android:layout_height="540px"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="@android:drawable/alert_dark_frame"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@*android:drawable/ab_transparent_dark_holo" >
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/pane_padding"
+            android:paddingLeft="@dimen/pane_padding"
+            android:paddingRight="@dimen/pane_padding"
+            android:paddingTop="@dimen/pane_padding"
+            android:text="@string/STRING_DTV_MANUAL_TUNING"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget.ActionBar.Title" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/pane_padding_half"
+            android:layout_marginLeft="@dimen/pane_padding"
+            android:layout_marginRight="@dimen/pane_padding"
+            android:layout_marginTop="@dimen/pane_padding_half" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pane_padding"
+        android:layout_marginRight="@dimen/pane_padding"
+        android:paddingBottom="@dimen/pane_padding_half"
+        android:paddingTop="@dimen/pane_padding_half" >
+
+        <TextView
+            android:layout_width="54px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pane_padding_half"
+            android:layout_marginRight="@dimen/pane_padding_half"
+            android:gravity="center_vertical|left"
+            android:text="@string/STRING_NEW"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:layout_width="72px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pane_padding_half"
+            android:layout_marginRight="@dimen/pane_padding_half"
+            android:gravity="center_vertical|left"
+            android:text="@string/STRING_POSITION"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:layout_width="144px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pane_padding_half"
+            android:layout_marginRight="@dimen/pane_padding_half"
+            android:gravity="center_vertical|left"
+            android:text="@string/STRING_NAME"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pane_padding_half"
+            android:layout_marginRight="@dimen/pane_padding_half"
+            android:gravity="center_vertical|left"
+            android:text="@string/STRING_TYPE"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/pane_padding"
+        android:layout_marginRight="@dimen/pane_padding"
+        android:choiceMode="none"
+        android:fadeScrollbars="false"
+        android:listSelector="@drawable/item_holo_border_background"
+        android:scrollbarStyle="outsideOverlay"
+        tools:listitem="@layout/item_dtv_manual_tuning" />
+
+</LinearLayout>

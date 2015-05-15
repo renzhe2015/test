@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500.0px"
+    android:layout_height="350.0px"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+	    android:layout_height="350.0px"
+	    android:layout_gravity="center"
+	    android:background="@drawable/system_pop_frame_bg"
+	    android:orientation="vertical">
+        
+    
+	    <TextView
+	        android:id="@+id/resetfactory_txt1"
+	        android:layout_width="400.0px"
+	        android:layout_height="50.0px"        
+	        android:layout_marginLeft="30.0px"
+	        android:layout_marginTop="2.0px"
+	        android:textColor="@color/TextItemSelectedColor"
+	        android:textSize="15.0sp"
+	        android:text="@string/tcl_restfactory_title" >
+	    </TextView>
+	    
+	    <TextView
+	        android:id="@+id/resetfactory_txt2"
+	        android:layout_width="400.0px"
+	        android:layout_height="50.0px"        
+	        android:layout_marginLeft="5.0px"
+	        android:layout_marginTop="15.0px"
+	        android:gravity="center"
+	        android:layout_gravity="center_horizontal"
+	        android:textColor="@color/white_color"
+	        android:textSize="15.0sp"
+	        android:text="@string/tcl_kindly_reminder" >
+	    </TextView>
+	    
+	    <TextView
+	        android:id="@+id/resetfactory_txt3"
+	        android:layout_width="450.0px"
+	        android:layout_height="110.0px"        
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="23.333334px"
+	        android:textColor="@color/white_color"
+	        android:textSize="15.0sp"
+	        android:text="@string/tcl_restfactory_content" >
+	    </TextView>
+	    
+	    <LinearLayout
+	        android:layout_width="600.0px"
+	        android:layout_height="wrap_content"        
+	        android:layout_marginLeft="35.0px"
+	        android:layout_marginTop="35.0px">
+	        
+	        <Button
+		        android:id="@+id/reset_factory_sure"
+		    	android:layout_width="160.0px"
+		        android:layout_height="50.0px"
+		        android:layout_marginLeft="10.0px"
+		        android:text="@string/tcl_system_confirm"
+		        android:focusable="true"
+		        android:background="@drawable/item_normal">
+		        <requestFocus>
+		        </requestFocus>
+		    </Button>
+		    
+		    <Button
+		        android:id="@+id/reset_factory_cancel"
+		    	android:layout_width="160.0px"
+		        android:layout_height="50.0px"
+		        android:layout_marginLeft="100.0px"
+		        android:text="@string/tcl_system_cancel"
+		        android:focusable="true"
+		        android:background="@drawable/item_normal">
+		    </Button>   
+	    </LinearLayout>
+    </LinearLayout>
+    
+    
+
+</LinearLayout>

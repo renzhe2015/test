@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.tsb.settings.menu.DeenListView
+        android:id="@+id/list"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_h"
+        android:fadeScrollbars="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:listSelector="@drawable/item_generic_round_background"
+        android:layout_marginLeft="50px" >
+    </com.tsb.settings.menu.DeenListView>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100.0px"
+    android:layout_height="66.66667px"
+    android:layout_gravity="center"
+    android:background="@drawable/bk_style_stroke_gray_soild_1" >
+
+    <TextView
+        android:id="@+id/text_channel_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/pane_padding_half"        
+        android:gravity="center"
+        android:text="@string/tcl_radio"
+        android:textColor="#FFFFFF"
+        android:textSize="10.0sp" />
+
+</FrameLayout>

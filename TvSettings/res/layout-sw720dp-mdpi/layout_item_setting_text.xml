@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_control"
+    android:layout_width="273.33334px"
+    android:layout_height="41.333336px"
+    android:duplicateParentState="true"
+    android:gravity="center_horizontal"
+    android:text="@null"
+    android:textColor="@drawable/item_generic_textcolor"
+    android:background="@drawable/reset_background_unfocus"
+    android:textSize="22.0px" 
+    android:paddingTop="14.666667px"/>

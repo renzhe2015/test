@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000" >
+
+    <LinearLayout
+        android:layout_width="960px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#80FFFFFF"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/pane_padding_half"
+        android:paddingLeft="@dimen/pane_padding"
+        android:paddingRight="@dimen/pane_padding"
+        android:paddingTop="@dimen/pane_padding" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4D4D4D"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="15px" >
+
+            <TextView
+                android:id="@+id/text_program_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15px"
+                android:text="@null"
+                android:textColor="#fb9700"
+                android:textSize="11.25sp" />
+
+            <TextView
+                android:id="@+id/text_program_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15px"
+                android:text="@null"
+                android:textColor="#fb9700"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:background="#333333"
+            android:padding="22.5px" >
+
+            <TextView
+                android:id="@+id/text_program_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@null"
+                android:textColor="#FFFFFF"
+                android:textSize="11.25sp" />
+        </ScrollView>
+
+        <TextView
+            style="@style/Widget.Tv.TextView.Hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/pane_padding_half"
+            android:drawableLeft="@drawable/ic_hint_exit"
+            android:text="@string/STRING_EXIT" >
+        </TextView>
+    </LinearLayout>
+
+</FrameLayout>

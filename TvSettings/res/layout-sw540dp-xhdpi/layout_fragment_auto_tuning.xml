@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Pane.TVAutoSearch"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="100px"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_tv_background"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/text_title"
+            style="@style/Widget.Tv.TextView.Title"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:paddingLeft="20px"
+            android:text="@string/STRING_AUTO_TUNING_ATV"
+            android:textColor="@color/title_color"
+            android:textSize="48px" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/pane_padding"
+        android:paddingLeft="@dimen/pane_padding"
+        android:paddingRight="@dimen/pane_padding"
+        android:paddingTop="@dimen/pane_padding" >
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pane_padding_half"
+            android:layout_marginRight="@dimen/pane_padding_half"
+            android:layout_weight="1"
+            android:max="100" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30px"
+        android:layout_weight="0.00"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/pane_padding"
+        android:paddingLeft="@dimen/pane_padding"
+        android:paddingRight="@dimen/pane_padding"
+        android:paddingTop="@dimen/pane_padding" >
+
+        <TextView
+            android:id="@+id/tv_auto_search_label"
+            style="@style/Widget.Tv.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.1"
+            android:gravity="right"
+            android:text="@string/tcl_atv_auto_search_number" 
+            android:textColor="@color/gray_color"/>
+
+        <TextView
+            android:id="@+id/text_found"
+            style="@style/Widget.Tv.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="@null" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_cancel"
+        style="@style/Widget.Tv.ButtonBarButton.Tunning"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="28px"
+        android:text="@string/cancel_tv_tunning"
+        android:visibility="visible" >
+
+        <requestFocus />
+    </Button>
+
+</LinearLayout>

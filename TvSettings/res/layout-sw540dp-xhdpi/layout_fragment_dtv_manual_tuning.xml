@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500px"
+    android:layout_height="380px"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="100px"
+    android:background="@drawable/dialog_tv_tunning_background"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_title"
+        style="@style/Widget.Tv.TextView.Title"
+        android:gravity="center_vertical|center_horizontal"
+        android:shadowColor="#FB3C3F3B"
+        android:singleLine="false"
+        android:text="@string/STRING_MANUAL_TUNING" 
+        android:focusable="false"/>
+    
+    <LinearLayout
+        android:id="@+id/container_dtv_tuning"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30px"
+        android:baselineAligned="true"
+        android:focusable="false"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/pane_padding_half"
+        android:paddingLeft="@dimen/pane_padding"
+        android:paddingRight="@dimen/pane_padding"
+        android:paddingTop="@dimen/pane_padding_half" 
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pane_padding_half"
+            android:layout_marginRight="@dimen/pane_padding_half"
+            android:layout_weight="1"
+            android:max="100" 
+            android:visibility="gone"/>
+        
+        <LinearLayout
+            android:id="@+id/found_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal"
+	        android:layout_marginTop="50px"
+	        android:paddingBottom="@dimen/pane_padding"
+	        android:paddingLeft="@dimen/pane_padding"
+	        android:paddingRight="@dimen/pane_padding"
+	        android:paddingTop="@dimen/pane_padding" 
+	        android:visibility="gone">
+	
+		        <TextView
+		            android:id="@+id/tv_auto_search_label"
+		            style="@style/Widget.Tv.TextView"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="center"
+		            android:text="@string/tcl_dtv_auto_search_number" 
+		            android:layout_weight="0.1"
+		            android:layout_gravity="center_horizontal"/>
+		
+		        <TextView
+		            android:id="@+id/text_found"
+		            style="@style/Widget.Tv.TextView"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@null" 
+		            android:layout_weight="0.1"/>
+    	</LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_channel_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            
+            <TextView
+                style="@style/Widget.Tv.TextView.AtvTuing.Item.Title"
+                android:text="@string/tcl_dtv_manual_index" 
+                android:focusable="false"/>
+
+           	<EditText
+           	    android:id="@+id/item_channel"
+                android:nextFocusUp="@+id/btn_manual_search"
+                android:nextFocusDown="@+id/item_freq"
+           	    style="@style/Widget.Tv.EditText.AtvTuing.Item"
+           	    android:paddingLeft="5px"
+                android:focusable="true"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:hint="@string/tcl_dtv_manual_hint_idx"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+
+         <LinearLayout
+            android:id="@+id/item_freq_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            
+             <TextView
+                style="@style/Widget.Tv.TextView.AtvTuing.Item.Title"
+                android:text="@string/tcl_dtv_manual_freq" 
+                android:focusable="false"/>
+
+            <EditText
+           	    android:id="@+id/item_freq"
+                style="@style/Widget.Tv.EditText.AtvTuing.Item"
+                android:paddingLeft="45px"
+                android:focusable="true"
+                android:gravity="center_vertical|left"
+                android:nextFocusDown="@+id/btn_manual_search"
+                android:nextFocusUp="@id/item_channel"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:hint="@string/tcl_dtv_manual_hint_freq"
+                android:singleLine="true"/>
+            
+            <TextView
+                android:id="@+id/freq_unit2"
+                android:layout_height="wrap_content"
+                android:layout_width="75px"                   
+                android:layout_marginLeft = "-130px"
+                android:gravity="center_vertical|right"
+                android:focusable="false"
+                android:textColor="#FFFFFFFF"
+                android:textSize="15sp"
+                android:text="@string/tcl_atv_manual_freq_unit"/>
+            
+
+        </LinearLayout>
+        
+         <LinearLayout
+            android:id="@+id/item_bandwidth_layout"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical|left"
+            android:orientation="horizontal" >
+                        
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="6dp"
+                android:gravity="center"
+                android:focusable="false"
+                android:text="@string/STRING_BAND_WIDTH"
+                android:textSize="16sp" />
+            
+            <TextView
+                style="@style/Widget.Tv.TextView.AtvTuing.Item.Title"
+                android:layout_height="37.5px"
+                android:layout_marginLeft="46dp"
+                android:textSize="16sp"
+                android:textColor="@color/gray_color"
+                android:text="@string/tcl_dtv_manulsearch_bound_with" 
+                android:focusable="false"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/option_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal|bottom"
+            android:orientation="horizontal" 
+            android:layout_marginTop="20px">
+
+
+            <Button
+		        android:id="@+id/btn_manual_search"
+		        style="@style/Widget.Tv.ButtonBarButton.Tunning"
+		        android:layout_gravity="center_horizontal"
+                android:nextFocusDown="@+id/item_channel"
+                android:nextFocusUp="@id/item_freq"
+		        android:text="@string/STRING_STARTSCAN"
+		        android:visibility="visible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
